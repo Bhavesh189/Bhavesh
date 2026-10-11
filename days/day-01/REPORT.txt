@@ -1,0 +1,17 @@
+📊 SCORECARD (1–5 vs yesterday)
+Logic: pending | Speed: pending | Concepts: pending | English: pending
+First scorecard publishes with the 9:45 PM daily report on Oct 12.
+
+📌 BASELINE (Day 0 — Oct 11, 2026, honest starting point)
+- LeetCode: 350+ solved (139 Easy / 188 Medium / 29 Hard) — strong base, not from zero.
+- CGPA 9.20/10, B.Tech CS 3rd sem, Bikaner Technical University.
+- Experience: Backend Engineer (Go) @ Obfinity (Jul 2026–present); Web Developer Intern @ Squarecell (Jan–Feb 2026).
+- CS fundamentals: starting from zero — OS, DBMS, Networks, Linux all new.
+- Communication/English: needs work — now a daily trained dimension.
+- Starting scores: Logic 3 · Speed 3 · Concepts 3 · English 2 (to be calibrated in week 1).
+
+📈 TREND
+No trend yet — the curve starts tomorrow. Target: every dimension >1% better than the previous day, compounded.
+
+🎯 TOMORROW'S FOCUS (Day 02 — Oct 13)
+DSA #2 · Full-stack: closures & scope · CS: DBMS indexing · English: explain DSA solution.

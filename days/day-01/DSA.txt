@@ -1,0 +1,13 @@
+🧩 PROBLEM
+Delivered daily at 5:00 PM IST. The Day-01 problem arrives Monday, Oct 12, 2026 at 5:00 PM.
+(Planned curriculum order: arrays/strings → two pointers → sliding window → hashmaps → prefix sums → recursion → backtracking → trees → heaps → intervals → graphs → DP.)
+
+🏷️ PATTERN
+To be announced with the problem. If the pattern is new, a 5-line primer of the IDEA is given first — never the solution.
+
+🧠 MY APPROACH
+To be written after solving.
+Rule: struggle alone for 30+ minutes before asking for hints. Narrate the thought process aloud in English.
+
+⏱️ RESULT
+Status: pending — training begins Oct 12.
