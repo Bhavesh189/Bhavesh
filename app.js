@@ -1,5 +1,6 @@
 /* ============================================================
    Bhavesh's Training Journal — app logic (vanilla JS)
+   - RIGHT NOW dashboard: live IST clock + current timetable block
    - Renders home timeline + day pages from data/days.json
    - Normal/Exam mode: official mode from data/mode.json,
      user override persisted in localStorage.
@@ -9,29 +10,145 @@
 const MODE_KEY = "bhavesh-mode-override"; // "normal" | "exam" | null
 const BASELINE_DSA = 350; // LeetCode solved before training began (Day 0)
 
-/* Block schedules, from ~/workspace/interview-training/timetable.md */
-const SCHEDULE = {
+/* Full timetable, from ~/workspace/interview-training/timetable.md.
+   Each block: [startMin, endMin, icon, title, description].
+   Sleep (11 PM - 7 AM, Sun: till 12 PM) is handled separately. */
+const TIMETABLE = {
   normal: {
-    label: "NORMAL MODE",
-    desc: "Full training day: DSA + full-stack depth + CS fundamentals from zero + English + daily scorecard. Sunday = mock interview day.",
-    blocks: [
-      ["5:00 – 6:00 PM", "DSA Problem of the Day", "Interview-level, pattern-based. Solve alone 30+ min, hints only."],
-      ["6:00 – 7:00 PM", "Full-Stack Depth (Wed: Zulip)", "JS → React → Node → DBs → System Design. Wed = Zulip open-source."],
-      ["8:15 – 9:15 PM", "CS Fundamentals", "From absolute zero → interview depth. OS → DBMS → Networks → Linux."],
-      ["9:15 – 9:45 PM", "English Communication", "Explain in English. STAR stories. Rapid Q&A."],
-      ["9:45 – 10:00 PM", "Daily Report", "Scorecard vs yesterday: logic, speed, concepts, English."]
+    weekday: [ // Mon - Fri
+      [420, 450, "☀️", "Wake up & get ready", "Fresh start. No phone scrolling."],
+      [450, 960, "🎓", "College", "B.Tech classes — be present, take notes."],
+      [960, 1020, "🌿", "Unwind / free time", "Rest, walk, recharge."],
+      [1020, 1080, "🧩", "DSA Problem of the Day", "One interview-level problem. Struggle 30+ min, hints only, think aloud."],
+      [1080, 1140, "🧱", "Full-Stack Depth", "JS → React → Node → databases. Wednesday = Zulip open source."],
+      [1140, 1215, "💪", "Gym + dinner", "Train the body, fuel the brain."],
+      [1215, 1275, "💻", "CS Fundamentals", "From absolute zero → interview depth. OS → DBMS → Networks → Linux."],
+      [1275, 1305, "🎤", "English & STAR", "Explain in English. STAR stories. Rapid Q&A."],
+      [1305, 1320, "📝", "Daily report", "Scorecard vs yesterday: logic, speed, concepts, English."],
+      [1320, 1380, "📚", "College study", "Assignments, revision."]
+    ],
+    saturday: [
+      [420, 450, "☀️", "Wake up & get ready", "Fresh start. No phone scrolling."],
+      [450, 960, "🎓", "College", "B.Tech classes — be present, take notes."],
+      [960, 1020, "🌿", "Unwind / free time", "Rest, walk, recharge."],
+      [1020, 1080, "🧩", "DSA Problem of the Day", "One interview-level problem. Struggle 30+ min, hints only."],
+      [1080, 1140, "🤝", "Zulip Open Source", "Real issues, real PRs. The GSoC road."],
+      [1140, 1215, "💪", "Gym + dinner", "Train the body, fuel the brain."],
+      [1215, 1260, "🔍", "Project deep-dive", "Dark-Matter / Obfinity internals — know your own code cold."],
+      [1260, 1305, "🎤", "English", "Explain in English. Rapid Q&A."],
+      [1305, 1320, "📝", "Weekly review", "Week's wins, gaps, and next week's fix plan."],
+      [1320, 1380, "📚", "College study", "Assignments, revision."]
+    ],
+    sunday: [
+      [720, 750, "☀️", "Wake up & freshen up", "Sunday starts at noon."],
+      [750, 930, "🎓", "College project files & assignments", "Get the college work done first."],
+      [930, 990, "🌿", "Rest", "Recharge — stay fresh for the evening."],
+      [990, 1050, "🧩", "DSA — mandatory", "The streak never breaks, even on Sunday."],
+      [1050, 1080, "☕", "Gap", "Breathe. Stay fresh."],
+      [1080, 1140, "🧱", "Light full-stack / revision", "Easy revision, no heavy lifting."],
+      [1140, 1215, "💪", "Gym + dinner", "Train the body, fuel the brain."],
+      [1215, 1305, "🎙️", "Mock interview", "Timed. Like the real thing."],
+      [1305, 1335, "📝", "Feedback & fix plan", "What to fix next week."],
+      [1335, 1380, "🌙", "Wind down", "Light evening, early night."]
     ]
   },
   exam: {
-    label: "EXAM MODE",
-    desc: "College exams have priority. Training shrinks — but the DSA streak never breaks. Sunday mocks pause.",
-    blocks: [
-      ["5:00 – 6:00 PM", "DSA Problem of the Day", "MANDATORY — the streak never breaks."],
-      ["6:00 – 7:00 PM", "College exam prep", ""],
-      ["8:15 – 11:00 PM", "College exam prep", "Priority block."]
+    weekday: [ // Mon - Sat in exam mode
+      [420, 450, "☀️", "Wake up & get ready", "Fresh start."],
+      [450, 960, "🎓", "College", "B.Tech classes as usual."],
+      [960, 1020, "🌿", "Unwind / free time", "Rest, walk, recharge."],
+      [1020, 1080, "🧩", "DSA — mandatory", "The streak never breaks, even in exams."],
+      [1080, 1140, "📚", "College exam prep", "Exams have priority."],
+      [1140, 1215, "💪", "Gym + dinner", "Train the body, fuel the brain."],
+      [1215, 1380, "📚", "College exam prep", "Priority block — deep focus."]
+    ],
+    saturday: [ // same as exam weekday
+      [420, 450, "☀️", "Wake up & get ready", "Fresh start."],
+      [450, 960, "🎓", "College", "B.Tech classes as usual."],
+      [960, 1020, "🌿", "Unwind / free time", "Rest, walk, recharge."],
+      [1020, 1080, "🧩", "DSA — mandatory", "The streak never breaks, even in exams."],
+      [1080, 1140, "📚", "College exam prep", "Exams have priority."],
+      [1140, 1215, "💪", "Gym + dinner", "Train the body, fuel the brain."],
+      [1215, 1380, "📚", "College exam prep", "Priority block — deep focus."]
+    ],
+    sunday: [ // mocks pause in exam mode
+      [720, 750, "☀️", "Wake up & freshen up", "Sunday starts at noon."],
+      [750, 990, "📚", "College exam prep", "Exams have priority."],
+      [990, 1050, "🧩", "DSA — mandatory", "The streak never breaks, even on Sunday."],
+      [1050, 1140, "📚", "College exam prep", "Keep going."],
+      [1140, 1215, "💪", "Gym + dinner", "Train the body, fuel the brain."],
+      [1215, 1380, "📚", "College exam prep", "Priority block — deep focus."],
+      [1335, 1380, "🌙", "Wind down", "Light evening, early night."]
     ]
   }
 };
+
+function dayType(dayIdx) { // 0 = Sunday
+  return dayIdx === 0 ? "sunday" : dayIdx === 6 ? "saturday" : "weekday";
+}
+
+/* Overnight sleep block. Returns {start, end} in minutes; end may exceed 1440. */
+function sleepRange(dayIdx) {
+  if (dayIdx === 0) return { start: 1380, end: 720 + 1440 }; // Sun: 11 PM -> 12 PM
+  return { start: 1380, end: 420 + 1440 }; // 11 PM -> 7 AM
+}
+function sleepBlock(dayIdx) {
+  const r = sleepRange(dayIdx);
+  return {
+    start: r.start, end: r.end, icon: "😴",
+    title: dayIdx === 0 ? "Sleep / rest" : "Sleep",
+    desc: dayIdx === 0 ? "Recharge. Sunday starts at 12 PM." : "11 PM – 7 AM. Non-negotiable."
+  };
+}
+
+function fmtTime(m) {
+  m = ((m % 1440) + 1440) % 1440;
+  let h = Math.floor(m / 60);
+  const mm = m % 60;
+  const ap = h >= 12 ? "PM" : "AM";
+  h = h % 12; if (h === 0) h = 12;
+  return h + ":" + String(mm).padStart(2, "0") + " " + ap;
+}
+function fmtRange(s, e) { return fmtTime(s) + " – " + fmtTime(e); }
+
+/* Pure: given IST day index, minutes, and mode -> {current, next, blocks}. */
+function computeNow(dayIdx, mins, mode) {
+  const list = TIMETABLE[mode][dayType(dayIdx)].map(b => ({
+    start: b[0], end: b[1], icon: b[2], title: b[3], desc: b[4]
+  }));
+  const sleep = sleepBlock(dayIdx);
+  const sr = sleepRange(dayIdx);
+  let current = null;
+  for (const b of list) {
+    if (mins >= b.start && mins < b.end) { current = b; break; }
+  }
+  if (!current && (mins >= sr.start || mins < (sr.end % 1440))) current = sleep;
+  if (!current) {
+    current = { start: mins, end: mins, icon: "🌿", title: "Free moment", desc: "Between blocks — breathe." };
+  }
+  const upcoming = list.filter(b => b.start > mins).sort((a, b) => a.start - b.start);
+  let next = upcoming.length ? upcoming[0] : null;
+  if (!next) {
+    if (mins < sr.start && current !== sleep) {
+      next = sleep; // evening: sleep is next
+    } else {
+      next = { start: 0, end: 0, icon: "🌅", title: "Tomorrow's first block", desc: "Wake up and start again." };
+    }
+  }
+  return { current, next, blocks: list.concat([sleep]) };
+}
+
+/* IST parts without any library. */
+function istParts() {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "Asia/Calcutta", weekday: "short",
+    hour: "2-digit", minute: "2-digit", hourCycle: "h23"
+  }).formatToParts(new Date());
+  const o = {};
+  for (const p of parts) o[p.type] = p.value;
+  const dayMap = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+  return { dayIdx: dayMap[o.weekday], mins: parseInt(o.hour, 10) * 60 + parseInt(o.minute, 10) };
+}
 
 /* ---------- helpers ---------- */
 async function getJSON(path) {
@@ -49,6 +166,7 @@ function esc(s) {
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
 }
+function set(id, text) { const el = document.getElementById(id); if (el) el.textContent = text; }
 /* Lines starting with an emoji become section headers. */
 function renderTxt(txt) {
   const lines = txt.replace(/\r/g, "").split("\n");
@@ -72,43 +190,94 @@ function getParam(name) {
 /* ---------- mode ---------- */
 let officialMode = "normal";
 function effectiveMode() {
-  const override = localStorage.getItem(MODE_KEY);
-  if (override === "normal" || override === "exam") return override;
+  try {
+    const override = localStorage.getItem(MODE_KEY);
+    if (override === "normal" || override === "exam") return override;
+  } catch (e) { /* storage unavailable */ }
   return officialMode;
 }
 function renderModeUI() {
   const mode = effectiveMode();
-  const override = localStorage.getItem(MODE_KEY);
-  document.querySelectorAll(".badge").forEach(b => {
-    b.classList.toggle("normal", mode === "normal");
-    b.classList.toggle("exam", mode === "exam");
-    b.innerHTML = '<span class="dot"></span>' +
-      (mode === "normal" ? "NORMAL MODE" : "EXAM MODE") +
-      (override ? "" : ' <span class="small muted">· official</span>');
-  });
-  document.querySelectorAll(".mode-banner").forEach(el => {
-    el.classList.toggle("exam", mode === "exam");
-    el.querySelector("p").textContent = SCHEDULE[mode].desc;
-    el.querySelector("strong").textContent = SCHEDULE[mode].label;
-  });
+  const badge = document.getElementById("mode-badge");
+  if (badge) {
+    badge.classList.toggle("normal", mode === "normal");
+    badge.classList.toggle("exam", mode === "exam");
+  }
+  set("mode-label", mode === "normal" ? "NORMAL MODE" : "EXAM MODE");
   const toggle = document.getElementById("mode-toggle");
   if (toggle) toggle.textContent = mode === "normal" ? "Switch to Exam Mode" : "Switch to Normal Mode";
-  const focusBlocks = document.getElementById("focus-blocks");
-  if (focusBlocks) {
-    focusBlocks.innerHTML = SCHEDULE[mode].blocks.map(b =>
-      '<div class="program-item"><h4>' + esc(b[0]) + " — " + esc(b[1]) + "</h4>" +
-      (b[2] ? '<p>' + esc(b[2]) + "</p>" : "") + "</div>"
-    ).join("");
-  }
 }
 function initModeToggle() {
   const toggle = document.getElementById("mode-toggle");
   if (!toggle) return;
   toggle.addEventListener("click", () => {
     const next = effectiveMode() === "normal" ? "exam" : "normal";
-    localStorage.setItem(MODE_KEY, next);
+    try { localStorage.setItem(MODE_KEY, next); } catch (e) { /* ignore */ }
     renderModeUI();
+    renderNow();
+    renderPlan();
   });
+}
+
+/* ---------- RIGHT NOW dashboard ---------- */
+function tickClock() {
+  const now = new Date();
+  try {
+    set("clock-time", new Intl.DateTimeFormat("en-IN", {
+      timeZone: "Asia/Calcutta", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: true
+    }).format(now));
+    set("clock-date", new Intl.DateTimeFormat("en-IN", {
+      timeZone: "Asia/Calcutta", weekday: "long", day: "numeric", month: "long", year: "numeric"
+    }).format(now));
+    set("mini-clock", new Intl.DateTimeFormat("en-IN", {
+      timeZone: "Asia/Calcutta", hour: "2-digit", minute: "2-digit", hour12: true
+    }).format(now));
+  } catch (e) { /* Intl unavailable */ }
+}
+
+function renderNow() {
+  if (!document.getElementById("now-title")) return;
+  let p;
+  try { p = istParts(); } catch (e) { return; }
+  const { current, next } = computeNow(p.dayIdx, p.mins, effectiveMode());
+  set("now-icon", current.icon);
+  set("now-title", current.title);
+  set("now-range", fmtRange(current.start, current.end));
+  set("now-desc", current.desc);
+  const total = current.end - current.start;
+  const done = total > 0
+    ? (p.mins >= current.start ? p.mins - current.start : p.mins + 1440 - current.start)
+    : 0;
+  const pct = total > 0 ? Math.max(0, Math.min(100, (done / total) * 100)) : 0;
+  const bar = document.getElementById("now-progress");
+  if (bar) bar.style.width = pct.toFixed(1) + "%";
+  const nt = document.getElementById("next-text");
+  if (nt) nt.textContent = next.icon + " " + next.title +
+    (next.start || next.end ? " (" + fmtRange(next.start, next.end) + ")" : "");
+}
+
+function renderPlan() {
+  const list = document.getElementById("plan-list");
+  if (!list) return;
+  let p;
+  try { p = istParts(); } catch (e) { return; }
+  const mode = effectiveMode();
+  const { blocks } = computeNow(p.dayIdx, p.mins, mode);
+  const dayName = new Intl.DateTimeFormat("en-IN", { timeZone: "Asia/Calcutta", weekday: "long" })
+    .format(new Date());
+  set("plan-day-tag", dayName.toUpperCase() + " · " + mode.toUpperCase() + " MODE");
+  // Order: day blocks first, sleep last.
+  const ordered = blocks.slice(0, -1).concat([blocks[blocks.length - 1]]);
+  list.innerHTML = ordered.map(b => {
+    const isNow = p.mins >= b.start && p.mins < Math.min(b.end, 1440) ||
+      (b.end > 1440 && (p.mins >= b.start || p.mins < (b.end % 1440)));
+    const isPast = !isNow && b.end <= p.mins && b.end <= 1440;
+    return '<div class="plan-row' + (isNow ? " is-now" : isPast ? " is-past" : "") + '">' +
+      '<div class="p-icon">' + esc(b.icon) + "</div>" +
+      '<div><div class="p-time">' + esc(fmtRange(b.start, b.end)) + "</div>" +
+      '<div class="p-title">' + esc(b.title) + "</div>" +
+      (b.desc ? '<div class="p-desc">' + esc(b.desc) + "</div>" : "") + "</div></div>";
+  }).join("");
 }
 
 /* ---------- home page ---------- */
@@ -133,10 +302,8 @@ function renderTimeline(days) {
 }
 function renderStats(days) {
   const done = days.filter(d => d.scores && d.scores.logic != null);
-  const set = (id, val) => { const e = document.getElementById(id); if (e) e.textContent = val; };
   set("stat-days", String(done.length).padStart(2, "0"));
-  set("stat-dsa", BASELINE_DSA + "+" + (done.length ? " / +" + done.length : ""));
-  set("stat-phase", "Week 1");
+  set("stat-dsa", BASELINE_DSA + "+" + (done.length ? " (+" + done.length + ")" : ""));
   if (done.length) {
     const avg = done.reduce((s, d) =>
       s + (d.scores.logic + d.scores.speed + d.scores.concepts + d.scores.english) / 4, 0) / done.length;
@@ -145,23 +312,16 @@ function renderStats(days) {
     set("stat-score", "—");
   }
 }
-function renderFocus(days) {
-  const el = document.getElementById("focus-day");
-  if (!el || !days.length) return;
-  const latest = [...days].sort((a, b) => a.id.localeCompare(b.id)).pop();
-  el.innerHTML =
-    '<div class="day-id" style="color:var(--accent-2);font-weight:700;letter-spacing:.12em;font-size:.8rem;">' +
-    esc(latest.id.toUpperCase().replace("-", " ")) + " · " + esc(latest.date) + "</div>" +
-    "<h3 style='margin:6px 0'>" + esc(latest.title) + "</h3>" +
-    '<p class="muted small">' + esc(latest.highlight || "") + "</p>";
-}
 async function initHome() {
   try { officialMode = (await getJSON("data/mode.json")).mode || "normal"; }
   catch (e) { officialMode = "normal"; }
   let days = [];
   try { days = await getJSON("data/days.json"); } catch (e) { days = []; }
   renderModeUI(); initModeToggle();
-  renderTimeline(days); renderStats(days); renderFocus(days);
+  tickClock(); renderNow(); renderPlan();
+  setInterval(tickClock, 1000);
+  setInterval(() => { renderNow(); renderPlan(); }, 30000);
+  renderTimeline(days); renderStats(days);
 }
 
 /* ---------- day page ---------- */
