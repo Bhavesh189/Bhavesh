@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syllabus — Bhavesh's Training Journal</title>
+  <meta name="description" content="The complete series-wise training syllabus: every topic, what to do, what's done, what's remaining.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+  <style>
+    .syl-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+    .syl-tab {
+      cursor: pointer; border: 1px solid var(--border); background: var(--card-2);
+      color: var(--muted); font-family: var(--font); font-size: 0.85rem; font-weight: 600;
+      padding: 8px 14px; border-radius: 999px; white-space: nowrap;
+    }
+    .syl-tab.active { color: var(--text); border-color: var(--accent-2); background: rgba(34,211,238,.1); }
+    .syl-progress { margin: 12px 0 4px; }
+    .syl-progress .lbl { font-size: 0.85rem; color: var(--muted); margin-bottom: 6px; }
+    .syl-search {
+      width: 100%; margin: 10px 0 4px; padding: 12px 16px; font-size: 0.95rem;
+      background: var(--card-2); border: 1px solid var(--border); border-radius: 12px;
+      color: var(--text); font-family: var(--font);
+    }
+    .syl-search::placeholder { color: var(--faint); }
+    .topic { border: 1px solid var(--border); border-radius: 12px; background: var(--card-2); margin: 8px 0; overflow: hidden; }
+    .topic-head { display: flex; align-items: center; gap: 12px; padding: 13px 14px; cursor: pointer; }
+    .topic-head:active { background: rgba(255,255,255,.02); }
+    .topic-n {
+      flex: none; width: 34px; height: 34px; border-radius: 10px; font-size: 0.8rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(59,130,246,.12); color: #9cc2ff; border: 1px solid rgba(59,130,246,.3);
+    }
+    .topic-title { flex: 1; font-weight: 700; font-size: 0.98rem; line-height: 1.35; }
+    .pill { flex: none; font-size: 0.7rem; font-weight: 800; letter-spacing: .04em; padding: 5px 10px; border-radius: 999px; white-space: nowrap; }
+    .pill.done { background: rgba(52,211,153,.14); color: var(--green); border: 1px solid rgba(52,211,153,.4); }
+    .pill.progress { background: rgba(251,191,36,.12); color: var(--amber); border: 1px solid rgba(251,191,36,.35); }
+    .pill.todo { background: rgba(148,163,184,.1); color: var(--muted); border: 1px solid var(--border); }
+    .pill.skipped { background: rgba(248,113,113,.1); color: var(--red); border: 1px solid rgba(248,113,113,.3); }
+    .topic-body { display: none; padding: 0 14px 14px 60px; font-size: 0.9rem; color: var(--muted); }
+    .topic.open .topic-body { display: block; }
+    .topic-body dt { color: var(--text); font-weight: 700; font-size: 0.78rem; letter-spacing: .06em; margin: 10px 0 3px; }
+    .topic-body dd { margin: 0; }
+    .chev { flex: none; color: var(--faint); font-size: 0.8rem; }
+    .topic.open .chev { transform: rotate(90deg); }
+    .syl-note { font-size: 0.85rem; color: var(--faint); margin-top: 14px; }
+    #syl-loading { padding: 30px 0; text-align: center; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">← Back to home</a>
+
+    <header class="day-head">
+      <div class="day-id">MASTER PLAN</div>
+      <h1>📚 The Syllabus</h1>
+      <div class="date">Every topic, series-wise. Finish once, at infinity depth, never redo.</div>
+    </header>
+
+    <section class="card">
+      <h2><span class="emoji">📊</span> Overall progress</h2>
+      <div class="syl-progress">
+        <div class="lbl" id="overall-label">Loading…</div>
+        <div class="progress"><div class="progress-fill" id="overall-bar"></div></div>
+      </div>
+      <p class="syl-note">Updated every night after the daily report. Tap a subject, tap a topic to see what "done" means.</p>
+    </section>
+
+    <div class="syl-tabs" id="syl-tabs"></div>
+    <input class="syl-search" id="syl-search" type="search" placeholder="🔍 Search topics… (e.g. dijkstra, indexing, hooks)">
+    <div id="syl-list"><div id="syl-loading">Loading syllabus…</div></div>
+
+    <footer>
+      <span class="inf">∞</span> Series-wise. No random. Every topic earned.
+    </footer>
+  </div>
+  <script src="syllabus.js"></script>
+</body>
+</html>
