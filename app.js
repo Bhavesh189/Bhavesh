@@ -32,11 +32,23 @@ const TIMETABLE = {
       [450, 960, "🎓", "College", "B.Tech classes — be present, take notes."],
       [960, 1020, "🌿", "Unwind / free time", "Rest, walk, recharge."],
       [1020, 1080, "🧩", "DSA Problem of the Day", "One interview-level problem. Struggle 30+ min, hints only."],
-      [1080, 1140, "🤝", "Zulip Open Source", "Real issues, real PRs. The GSoC road."],
+      [1080, 1140, "🧱", "Full-Stack Depth", "JS → React → Node → DBs → System Design."],
+      [1140, 1190, "💪", "Gym + dinner", "Compressed: train hard, eat fast."],
+      [1195, 1295, "🏆", "Weekly Contest", "Timed contest. Speed under pressure."],
+      [1295, 1310, "🎤", "English lightning", "Rapid Q&A in English. Fast and sharp."],
+      [1310, 1320, "📝", "Weekly review", "Week's wins, gaps, next week's plan."],
+      [1320, 1380, "🤝", "Zulip Open Source", "Good-first-issues → PRs. The GSoC road."]
+    ],
+    wednesday: [
+      [420, 450, "☀️", "Wake up & get ready", "Fresh start. No phone scrolling."],
+      [450, 960, "🎓", "College", "B.Tech classes — be present, take notes."],
+      [960, 1020, "🌿", "Unwind / free time", "Rest, walk, recharge."],
+      [1020, 1080, "🧩", "DSA Problem of the Day", "One interview-level problem. Struggle 30+ min, hints only, think aloud."],
+      [1080, 1140, "🤝", "Zulip Open Source", "Good-first-issues → PRs. The GSoC road."],
       [1140, 1215, "💪", "Gym + dinner", "Train the body, fuel the brain."],
-      [1215, 1260, "🔍", "Project deep-dive", "Dark-Matter / Obfinity internals — know your own code cold."],
-      [1260, 1305, "🎤", "English", "Explain in English. Rapid Q&A."],
-      [1305, 1320, "📝", "Weekly review", "Week's wins, gaps, and next week's fix plan."],
+      [1215, 1275, "💻", "CS Fundamentals", "From absolute zero → interview depth. OS → DBMS → Networks → Linux."],
+      [1275, 1305, "🎤", "English & STAR", "Explain in English. STAR stories. Rapid Q&A."],
+      [1305, 1320, "📝", "Daily report", "Scorecard vs yesterday: logic, speed, concepts, English."],
       [1320, 1380, "📚", "College study", "Assignments, revision."]
     ],
     sunday: [
@@ -84,7 +96,10 @@ const TIMETABLE = {
 };
 
 function dayType(dayIdx) { // 0 = Sunday
-  return dayIdx === 0 ? "sunday" : dayIdx === 6 ? "saturday" : "weekday";
+  if (dayIdx === 0) return "sunday";
+  if (dayIdx === 6) return "saturday";
+  if (dayIdx === 3) return "wednesday"; // Zulip replaces full-stack depth
+  return "weekday";
 }
 
 /* Overnight sleep block. Returns {start, end} in minutes; end may exceed 1440. */
@@ -113,7 +128,8 @@ function fmtRange(s, e) { return fmtTime(s) + " – " + fmtTime(e); }
 
 /* Pure: given IST day index, minutes, and mode -> {current, next, blocks}. */
 function computeNow(dayIdx, mins, mode) {
-  const list = TIMETABLE[mode][dayType(dayIdx)].map(b => ({
+  const dayBlocks = TIMETABLE[mode][dayType(dayIdx)] || TIMETABLE[mode].weekday;
+  const list = dayBlocks.map(b => ({
     start: b[0], end: b[1], icon: b[2], title: b[3], desc: b[4]
   }));
   const sleep = sleepBlock(dayIdx);
