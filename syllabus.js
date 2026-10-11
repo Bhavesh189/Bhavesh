@@ -6,7 +6,8 @@
 
 const SHEET_ORDER = ["DSA", "OS", "DBMS", "Networks", "Linux",
   "Frontend-TS-React", "Backend-Node-Python", "PostgreSQL",
-  "AI-Integration", "DevOps"];
+  "System-Design", "Security", "AI-Integration", "DevOps",
+  "Behavioral-Projects", "Open-Source-Zulip"];
 
 let WORKBOOK = null;
 let ACTIVE_SHEET = SHEET_ORDER[0];
