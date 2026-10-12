@@ -1,11 +1,9 @@
 🎤 ENGLISH PRACTICE
-Planned for Day 01: explain the DSA solution back in full English sentences after solving.
-All training conversation happens in English from Day 1 — this is deliberate communication training.
+Day 1: explained the DSA solution back in full English sentences after solving (5:42 PM — stated the constraint lesson in my own words: "problem first, then solution"). All evening I narrated my thought process aloud in English while solving, answered every quiz question in English, and re-explained the OS Q3 miss in my own words at 9:30 PM. All training conversation happens in English from Day 1 — this is deliberate communication training.
 
 💬 STAR STORY / Q&A
 STAR practice begins in week 1. Format: Situation → Task → Action → Result.
 First stories will come from real experience: Obfinity Go backend work, Squarecell internship, Dark-Matter.
 
 📈 NOTES
-Baseline (Oct 11, 2026): communication needs work — this is why English is a daily scored dimension, not an afterthought.
-Every explanation is corrected gently and re-attempted until it is clear.
+Baseline (Oct 11, 2026): communication needed work — this is why English is a daily scored dimension, not an afterthought. Day 1: English 3, up from 2. Every explanation is corrected gently and re-attempted until it is clear.

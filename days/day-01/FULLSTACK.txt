@@ -1,9 +1,8 @@
 🎯 WHY THIS MATTERS
-Planned topic for Day 01: the JavaScript event loop — deep dive.
-It decides whether you truly understand async JavaScript, and interviewers use it to separate candidates who memorized definitions from those who understand the runtime.
+JavaScript event-loop deep-dive — Day 1 full-stack lesson (2 hrs). It decides whether you truly understand async JavaScript; interviewers use it to separate candidates who memorized definitions from those who understand the runtime.
 
 📖 CORE CONCEPT
-Lesson begins Oct 12. Taught from zero: call stack, task queue, microtask queue, and how the browser/Node schedules work.
+Taught from zero: call stack, task queue, microtask queue, and how the browser/Node schedules work. One doubt raised in-lesson on microtasks vs macrotasks — resolved.
 
 🔬 BEYOND YOUTUBE
 The deep layer: libuv thread pool, why Node.js is single-threaded yet handles 10,000 connections, and the exact interview trap where candidates say "JS is single-threaded so Node can't scale."
@@ -12,7 +11,7 @@ The deep layer: libuv thread pool, why Node.js is single-threaded yet handles 10
 Classic questions: "Explain the event loop." "Promise vs setTimeout order?" "What is the microtask queue?" — plus follow-ups on each.
 
 ❓ QUIZ
-15 minutes at the end of the lesson: today's topic + spaced questions from previous days.
+15-minute, 5-question quiz — scored 2/5. Q1: print order right but micro/macro terms SWAPPED (I called promises macrotasks and setTimeout a microtask). Q2: answered 4,2,3,1 — correct is 4,2,1,3 (missed the one-macrotask-per-turn FIFO rule). Q3–Q5 unanswered. Diagnosis: rote "promise beats setTimeout" without a real queue model — mechanistic gap, not naming. Spaced re-quiz scheduled Wed Oct 14, 6 PM full-stack block: re-open the lesson with the 3 missed items re-asked.
 
 🙋 DOUBTS
 Ask anytime during the lesson — no doubt sleeps overnight.

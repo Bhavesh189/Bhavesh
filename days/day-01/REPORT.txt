@@ -1,17 +1,12 @@
 📊 SCORECARD (1–5 vs yesterday)
-Logic: pending | Speed: pending | Concepts: pending | English: pending
-First scorecard publishes with the 9:45 PM daily report on Oct 12.
+Logic: 3 (same) | Speed: 4 (up) | Concepts: 3 (same) | English: 3 (up)
+Day 1 complete at 9:30 PM — all blocks done: DSA problem + theory deep-dive, full-stack event-loop lesson (2 hrs), CS fundamentals OS lesson, English practice all evening. (9:45 PM report nudge not needed — report delivered in chat.)
 
-📌 BASELINE (Day 0 — Oct 11, 2026, honest starting point)
-- LeetCode: 350+ solved (139 Easy / 188 Medium / 29 Hard) — strong base, not from zero.
-- CGPA 9.20/10, B.Tech CS 3rd sem, Bikaner Technical University.
-- Experience: Backend Engineer (Go) @ Obfinity (Jul 2026–present); Web Developer Intern @ Squarecell (Jan–Feb 2026).
-- CS fundamentals: starting from zero — OS, DBMS, Networks, Linux all new.
-- Communication/English: needs work — now a daily trained dimension.
-- Starting scores: Logic 3 · Speed 3 · Concepts 3 · English 2 (to be calibrated in week 1).
+📌 HIGHLIGHT
+Baselines corrected: LeetCode 455 solved (176 Easy / 247 Medium / 32 Hard) — not the stale 350+. CGPA 9.20/10, B.Tech CS 3rd sem, Bikaner Technical University. Two diagnosis-grade lessons from Day 1: (1) constraint-reading discipline, not algorithms, is my DSA weakness — I used division despite an explicit ban on a problem I'd seen before; (2) my event-loop knowledge is rote — I couldn't draw the queue model, quiz 2/5.
 
 📈 TREND
-No trend yet — the curve starts tomorrow. Target: every dimension >1% better than the previous day, compounded.
+Day 1 of the compounding curve. Speed and English both moved +1. Target: every dimension >1% better than the previous day, compounded.
 
 🎯 TOMORROW'S FOCUS (Day 02 — Oct 13)
 DSA #2 · Full-stack: closures & scope · CS: DBMS indexing · English: explain DSA solution.

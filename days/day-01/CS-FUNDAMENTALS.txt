@@ -1,19 +1,17 @@
 🎯 WHY THIS MATTERS
-Planned topic for Day 01: OS — processes vs threads.
-Operating systems show up in every serious interview (Google, Amazon all ask). This is the foundation everything else stands on.
+OS — processes vs threads, Day 1 CS lesson. Operating systems show up in every serious interview (Google, Amazon all ask). This is the foundation everything else stands on.
 
 📖 CORE CONCEPT
-Lesson begins Oct 12. Taught from ABSOLUTE ZERO — no assumptions.
-Starting point: what is an operating system, what is a process, what is a thread, and how are they different?
+Taught from ABSOLUTE ZERO — no assumptions (lesson done 8:18 PM). Covered: what an OS manages (CPU, memory, devices), how a program becomes a process, and processes vs threads — definitions, shared vs private memory.
 
 🔬 BEYOND YOUTUBE
-The deep layer: context switching cost, why threads share memory and why that is dangerous, how this connects to Node.js and servers you will build.
+The deep layer: context switching cost, why threads share memory and why that is dangerous, how this connects to Node.js and servers I will build.
 
 💼 INTERVIEW LENS
 Classic questions: "Process vs thread?" "What is context switching?" "When would you use threads over processes?" — plus follow-ups.
 
 ❓ QUIZ
-15 minutes at the end of the lesson: today's topic + spaced questions from previous days.
+4-question quiz — scored 3/4. Q1 ✅ (2 processes, 1 program). Q2 ✅ (shared: globals/heap; private: stack/registers). Q3 ❌ → explained and fixed (TLB flush on context switch). Q4 ✅ (processes for untrusted code — isolation). At 9:30 PM I explained Q3 back in my own English words correctly: same address space, no reset — named the TLB.
 
 🙋 DOUBTS
 Ask anytime during the lesson — no doubt sleeps overnight.
