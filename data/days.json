@@ -1,1 +1,30 @@
-[{"date":"2026-10-12","dsa_pattern":"Arrays","dsa_problem":"Product of Array Except Self (LC 238)","highlight":"Day 1 complete 9:30 PM: prefix/suffix solve in ~36 min (constraint miss on attempt 1), event-loop lesson (quiz 2/5), OS processes-vs-threads lesson (quiz 3/4). Speed & English both up +1.","id":"day-01","scores":{"concepts":3,"english":3,"logic":3,"speed":4},"title":"Day 1 — Product of Array Except Self + event loop + processes vs threads"}]
+[
+ {
+  "date": "2026-10-12",
+  "dsa_pattern": "Arrays",
+  "dsa_problem": "Product of Array Except Self (LC 238)",
+  "highlight": "Day 1 complete 9:30 PM: prefix/suffix solve in ~36 min (constraint miss on attempt 1), event-loop lesson (quiz 2/5), OS processes-vs-threads lesson (quiz 3/4). Speed & English both up +1.",
+  "id": "day-01",
+  "scores": {
+   "concepts": 3,
+   "english": 3,
+   "logic": 3,
+   "speed": 4
+  },
+  "title": "Day 1 — Product of Array Except Self + event loop + processes vs threads"
+ },
+ {
+  "id": "day-02",
+  "date": "2026-10-13",
+  "title": "Day 2 — 3Sum + closures & scope + DBMS #1",
+  "dsa_pattern": "Two pointers",
+  "dsa_problem": "3Sum (LC 15)",
+  "highlight": "Day 2 complete: 3Sum solved with one hint at 30 min (~44 min, 3-level dedup, O(n²)/O(1)), event-loop re-quiz 4/4 (term inversion fixed in 24h), closures 4/4, DBMS #1 4/4 from zero. AVL theory marked not-understood → re-teach queued. Concepts up, Speed down; avg 3.25.",
+  "scores": {
+   "logic": 3,
+   "speed": 3,
+   "concepts": 4,
+   "english": 3
+  }
+ }
+]

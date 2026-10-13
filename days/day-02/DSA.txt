@@ -1,0 +1,12 @@
+🧩 PROBLEM
+3Sum (LC 15) — Medium. Day 2 DSA problem, delivered 5:00 PM IST, Oct 13, 2026.
+
+🏷️ PATTERN
+Two pointers. Reframe the equation — nums[i] + nums[j] = −nums[k]: fix one element, then solve a sorted two-sum on the remainder, skipping duplicates at every level.
+
+🧠 MY APPROACH
+Stuck at O(n³) after 30 minutes (struggle rule: hint at 30, never spin 3 hours). One hint taken — sort the array + fix-one-index reduction — then implemented fully independently: correct duplicate-skipping at all 3 levels (outer i-skip, then both pointers past duplicates after each match), O(n²) time, O(1) extra space, no overflow. Took the hint cleanly and finished the structure myself.
+Theory deep-dive at 5:59 PM was MY pick: AVL trees — MARKED NOT UNDERSTOOD by me today. Logged honestly. Re-teach queued: slower, more examples, more visuals in a few days. Not pressing on is the rule.
+
+⏱️ RESULT
+Solved in ~44 minutes total. The stall point was the fix-one-element reduction step — new reflex installed: "can sorting unlock a pointer structure here?" Constraint-reading discipline held from Day 1.

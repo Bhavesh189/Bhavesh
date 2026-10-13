@@ -1,0 +1,12 @@
+📊 SCORECARD (1–5 vs yesterday)
+Logic: 3 (steady) | Speed: 3 (down from 4) | Concepts: 4 (up from 3) | English: 3 (steady)
+Day 2 complete — all blocks done: DSA 3Sum (two pointers), full-stack event-loop re-quiz 4/4 + closures & scope 4/4, CS fundamentals DBMS #1 4/4, English 3Sum explanation. Avg 3.25, same as Day 1 — different mix: Concepts up, Speed down. Honest, no invented percentages.
+
+📌 HIGHLIGHT
+Spaced repetition is now PROVEN: the 24-hour event-loop re-quiz went 2/5 → 4/4, term inversion fixed. Closures 4/4, DBMS 4/4 from zero. The blemish of the day: AVL theory marked NOT UNDERSTOOD by me at 5:59 PM — re-teach queued (slower, more visuals). Honest signal beats silent confusion, always.
+
+📈 TREND
+Day 2 of the compounding curve. New installed reflex: "can sorting unlock a pointer structure?" when stuck. Constraint-reading discipline held from Day 1. Dips get diagnosed in 24 hours and fixed in 72.
+
+🎯 TOMORROW'S FOCUS (Day 03 — Oct 14)
+Zulip provisioning (start setup at 4:30 PM, verify dev server before 6 PM) → first Zulip block 6–7 PM. Pending: dev-machine OS answer. Timetable bends; training never hits zero.

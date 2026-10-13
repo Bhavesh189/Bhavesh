@@ -1,0 +1,9 @@
+🎤 ENGLISH PRACTICE
+Day 2: explained the 3Sum solution aloud in English, interview-style, 9:07 PM (~2 min) — content complete: the a+b+c=0 → a+b=−c reframe, sorting, fixing c, duplicate skips, the full O(n³)→O(n²) journey. All evening I narrated my thought process aloud in English while solving, answered every quiz in English. All training conversation happens in English from Day 1 — deliberate communication training.
+
+💬 STAR STORY / Q&A
+STAR practice begins in week 1. Format: Situation → Task → Action → Result.
+First stories will come from real experience: Obfinity Go backend work, Squarecell internship, Dark-Matter.
+
+📈 NOTES
+Feedback on today's explanation: frame the struggle as strategy — "I first considered all triplets (O(n³)), then realized fixing one element reduces it to two-pointer" — instead of narrating the stall as confusion. Interview structure locked: problem → approach → complexity. English 3, steady — clear technical think-aloud all evening.

@@ -1,0 +1,18 @@
+🎯 WHY THIS MATTERS
+Two things today: the event-loop spaced re-quiz (24-hour spacing on yesterday's 2/5 — the proven interval), then closures & scope. Both decide whether async JS is real knowledge or memorized words — and stale closures are one of the most-asked frontend interview topics.
+
+📖 CORE CONCEPT
+Event-loop re-quiz 6:07 PM — scored 4/4 (up from 2/5). The term inversion is FIXED: promises = microtasks, setTimeout = macrotasks, named correctly; one-macrotask-per-turn FIFO ordering correct; Q3 output 1,4,3,2 correct. The queue model is now locked after 24h spacing.
+Closures & scope lesson + quiz 7:48 PM — 4/4: var/let loop outputs + the mechanism correct, stale-closure cause correct (fix = useRef, named by coach), private-data use case correct.
+
+🔬 BEYOND YOUTUBE
+The mechanistic layer: it's not "promise beats setTimeout" — it's two queues with different drain rules. Same for closures: it's not "inner function remembers outer vars" — it's the lexical environment captured at creation time.
+
+💼 INTERVIEW LENS
+"What is a stale closure and how do you fix it?" "Why does the loop print 5,5,5,5 with var but 0,1,2,3 with let?" "Explain the event loop's queue ordering."
+
+❓ QUIZ
+Event-loop re-quiz 4/4. Closures quiz 4/4. Two clean sweeps in one evening.
+
+🙋 DOUBTS
+Ask anytime during the lesson — no doubt sleeps overnight.

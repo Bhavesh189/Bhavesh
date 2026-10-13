@@ -1,0 +1,20 @@
+🎯 WHY THIS MATTERS
+DBMS #1 — What is a database and a DBMS, Day 2 CS lesson. Databases underpin everything I build; interviewers expect the "why" before the "how."
+
+📖 CORE CONCEPT
+Taught from ABSOLUTE ZERO. Covered: what goes wrong with files as storage (full scans, slow operations, crash unsafety, hand-coded validation), what a database is (data + CRUD) vs what a DBMS is (the managing software), the lost update (wallet example), and SQL as declarative — you say WHAT, not HOW.
+
+🔬 BEYOND YOUTUBE
+The deep layer: the query optimizer picks the plan — the index is its tool, not the other way around. That refinement was today's polish point.
+
+💼 INTERVIEW LENS
+"Why not just use files?" "Database vs DBMS?" "What is a lost update?" — plus follow-ups.
+
+❓ QUIZ
+4-question quiz, 9:03 PM — scored 4/4 from zero: four file problems named, DB vs DBMS correct, lost-update (wallet) correct, declarative SQL correct.
+
+🙋 DOUBTS
+Ask anytime during the lesson — no doubt sleeps overnight.
+
+📌 HONEST NOTE
+CS fundamentals are starting from zero here (OS, DBMS, Networks, Linux all new as of Oct 11, 2026). That is the truth, and the curriculum is built for it: basics → interview depth.
