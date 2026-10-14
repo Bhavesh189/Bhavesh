@@ -1,0 +1,5 @@
+🎤 ENGLISH PRACTICE
+Day 3: explained my LC 3 approach in writing right after solving (5:04 PM) — sliding window, one-frequency-per-element logic, O(n)/O(1) reasoning, all in English sentences. Coach's polish: "big of big O of N" → "Big-O of N". No spoken explanation tonight (project-busy) — the written explanation plus polish feedback counts as the block.
+
+💬 NOTES
+All training conversation continues in English. Think-aloud discipline held during the 10-minute solve.

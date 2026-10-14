@@ -26,5 +26,19 @@
    "concepts": 4,
    "english": 3
   }
+ },
+ {
+  "id": "day-03",
+  "date": "2026-10-14",
+  "title": "Day 3 — Longest Substring + DBMS keys (project day)",
+  "dsa_problem": "Longest Substring Without Repeating Characters (LC 3)",
+  "dsa_pattern": "Sliding window",
+  "scores": {
+   "logic": 4,
+   "speed": 4,
+   "concepts": 3,
+   "english": 3
+  },
+  "highlight": "Day 3 project day: LC 3 solved in ~10 min (seen before, logged honestly), DBMS #2 half-done and repeating tomorrow, 6–7 PM project work (Zulip → Sat). Avg 3.5, up from 3.25."
  }
 ]

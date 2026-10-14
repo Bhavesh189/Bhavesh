@@ -1,0 +1,8 @@
+🎯 WHY THIS MATTERS
+Wednesday 6–7 PM is normally the full-stack depth block — today it became project work instead.
+
+📖 WHAT HAPPENED
+At 4:49 PM I told coach: "start DSA, and today's 6–7 session is for my project." The 6–7 PM Zulip first block moved to Saturday 10–11 PM; the Zulip dev-environment provision moves to Saturday afternoon. No full-stack lesson today — the hour went to my own project build, which is legitimate deep work.
+
+📅 CARRY-OVER
+Zulip: provision Saturday afternoon (./tools/provision, 45–90 min), first block Saturday 10–11 PM. Issue shortlist ready: #32138 (channel error messages) and #39005 (keyboard nav in overlays). #40017 is contested — skip it.

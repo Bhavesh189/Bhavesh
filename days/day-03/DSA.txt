@@ -1,0 +1,12 @@
+🧩 PROBLEM
+Longest Substring Without Repeating Characters (LC 3) — Medium. Day 3 DSA problem, delivered 4:49 PM IST, Oct 14, 2026 (at my request — "start DSA").
+
+🏷️ PATTERN
+Sliding window (NEW pattern — first one). Expand the right edge, shrink the left edge past any duplicate, track the max window size.
+
+🧠 MY APPROACH
+Solved in ~10 minutes, first attempt, no hints. I had seen this problem before, so this measured recall + execution, not fresh derivation — logged honestly. Code: for each r, mp[s[r]]++; while duplicate, mp[s[l++]]--; ans = max(ans, r-l+1). Correct on all cases including empty string.
+Complexity analysis unprompted and correct: O(n) time — each character enters and leaves the window once (amortized analysis, the exact idea from my Day 1 theory deep-dive, now in my own code); O(1) space — the map holds at most one entry per distinct char and the charset is bounded (~256), so constant regardless of n. One micro-nit from coach: unordered_map<int,int> works but unordered_map<char,int> says what I mean.
+
+⏱️ RESULT
+Solved correctly in ~10 min — my fastest medium yet. The invariant behind it (taught post-solve): after the shrink step, [l, r] is always the longest duplicate-free substring ending at r, because any valid substring ending at r cannot contain the older duplicate — so l must jump past it. Max over every r covers every candidate answer.

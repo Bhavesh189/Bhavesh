@@ -1,0 +1,11 @@
+🎯 WHY THIS MATTERS
+DBMS #2 — tables, schemas, and keys. I touch PostgreSQL daily in my Go backend work at Obfinity; keys are what make joins work and what interviewers probe.
+
+📖 CORE CONCEPT
+Lesson delivered 8:20 PM (teach-first). Table = rows (tuples) + columns (attributes); schema = the blueprint. Keys: primary key (unique, never NULL, one per table — e.g. student_id), foreign key (points at another table's PK — how tables relate), candidate keys (any column set that could be PK), composite keys (multi-column PK).
+
+🔬 BEYOND YOUTUBE
+Primary key as clustered index (rows physically stored in PK order — bad PK choice = slow queries); foreign keys are enforced referential integrity, not documentation (ON DELETE CASCADE); surrogate vs natural keys — auto-increment IDs never change, emails do.
+
+📝 STATUS
+Partial understanding — I was heads-down on my project and only absorbed about half. I answered Q1 correctly (candidates {id}, {email}, {phone}; picked id for minimality — coach added: also for stability, surrogate keys never change). Honest call, no penalty: the full lesson repeats tomorrow with Q2–Q4.

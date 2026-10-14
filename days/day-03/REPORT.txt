@@ -1,0 +1,8 @@
+📊 SCORECARD (1–5 vs yesterday)
+Logic: 4 (up) | Speed: 4 (up) | Concepts: 3 (down) | English: 3 (steady) — Avg 3.5, up from 3.25.
+
+📌 HIGHLIGHT
+Day 3 was a project day: DSA done fast (LC 3, ~10 min, correct first attempt — but I'd seen it before, logged honestly), theory half-done (DBMS #2 repeats tomorrow by my own call), 6–7 PM project work instead of Zulip. Two honesty signals rewarded: I disclosed the prior solve instead of letting coach over-credit me, and I asked to repeat DBMS rather than fake understanding.
+
+📈 TREND
+Speed climbing (44 → 10 min across three days, with the seen-before caveat). Concepts dipped on the deferred theory — tomorrow's re-teach should recover it. Discipline holding: constraints-first, think-aloud, English-only.
