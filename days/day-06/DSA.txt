@@ -1,0 +1,11 @@
+🧩 PROBLEM
+Pow(x, n) (LC 50) — Medium. Day 6 DSA problem, delivered 5:00 PM IST, Oct 17, 2026. Exam mode active — this was the only training block running today.
+
+🏷️ PATTERN
+Recursion (NEW pattern — after arrays → two pointers → sliding window → hash maps → prefix sums, all solid). Primer before solving: recursion = solve by calling self on a smaller input; base case + recursive step; self-similar structure; trust the contract, don't trace the stack; traps = missing base case, recomputing subproblems. Rule: 30 min struggle alone, hints only, solution never unprompted; constraints-first reminder (n down to −2³¹).
+
+🧠 MY APPROACH
+Started late (~20:02, after the fresher party), submitted 20:39 — ~37 min. Binary exponentiation via recursion: solve x^(n/2), square the result, multiply by x once more when n is odd. Negative n: compute x^|n|, then take the reciprocal. Note (language-specific): this relies on C++ negation/truncation behavior for −2³¹ — flagged by coach as C++-specific, worth remembering when switching languages.
+
+⏱️ RESULT
+Accepted 309/309, 0ms (100%), 8.40MB (99.78%). Solved in ~37 min with no hints — the recursion primer landed: correct contract-based thinking (solve the half, square, adjust for odd n). English walkthrough deferred — he went to sleep after the late start; it rolls to tomorrow.

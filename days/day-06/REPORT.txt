@@ -1,0 +1,12 @@
+📊 SCORECARD (1–5 vs yesterday)
+Logic: 5 | Speed: 4 | Concepts: 5 | English: deferred (walkthrough moved to tomorrow — he went to sleep after the late start)
+Day 6 complete — DSA only (exam mode): Pow(x, n) (LC 50) solved in ~37 min via recursive binary exponentiation. Accepted 309/309, 0ms (100%), 8.40MB (99.78%).
+
+📌 HIGHLIGHT
+Exam-mode day 1: only the 5 PM DSA block ran (all other blocks paused Oct 17–25 per his order). Fresher party today — he started the problem late (~20:02) but solved it cleanly with no hints: correct base-case / recursive-step structure, binary exponentiation, negative-n handling. The recursion primer ("trust the contract, don't trace the stack") clearly landed. Syllabus: DSA topic 6 (Recursion mastery) moved to In progress — today's pow(x,n) is named in its day activity, but the full mastery criteria (recursion-tree drawing, T(n) recurrence, conversion to iteration) aren't demonstrated yet.
+
+📈 TREND
+Recursion is the new pattern — introduced after arrays → two pointers → sliding window → hash maps → prefix sums, all solid. Logic 5 two days running (LC 560, LC 50). Speed 4: ~37 min on a fresh pattern after a late-evening start — inside the 30-minute struggle budget plus polish, no hints needed. English delivery gap stays the one watch-item: the walkthrough for LC 560 was garbled, and tonight's was deferred.
+
+🎯 TOMORROW'S FOCUS (Day 07 — Oct 18)
+Exam mode continues: 5 PM DSA (next problem), no other blocks. English: the Pow(x, n) interview-style walkthrough deferred from today (he went to sleep). Sunday mock stays paused through Oct 25 (exam mode).
