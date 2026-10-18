@@ -1,0 +1,12 @@
+📊 SCORECARD (1–5 vs yesterday)
+Logic: 5 | Speed: 4 | Concepts: 5 | English: pending (walkthroughs for LC 779 today and LC 50 from Day 6 both owed)
+Day 7 complete — DSA only (exam mode): K-th Symbol in Grammar (LC 779) solved in ~39 min. Accepted 55/55, 0ms (100%), 7.93MB.
+
+📌 HIGHLIGHT
+Exam-mode day 2: only the DSA block ran (all other blocks paused Oct 17–25 per his order). Problem delivered 12:02 PM early at his request; the 16:30 cron guarded to skip. Recursion, second problem in the pattern: the first attempt hit the exact trap flagged at delivery — building the whole row as a string → MLE at n=30 (2^29 chars, ~500MB; the Day 1 constraints-first warning). After the parent-child hint (parent at (k+1)/2; odd k → same symbol as parent, even k → flipped), he rewrote to return a single symbol and solved clean. Syllabus: DSA topic 6 (Recursion mastery) stays In progress — recursion-tree drawing, T(n) recurrence, and iteration conversion still aren't demonstrated.
+
+📈 TREND
+Logic 5 three days running (LC 560, LC 50, LC 779). Speed 4 steady: ~39 min with the rewrite. Concepts 5: the parent-child abstraction landed correctly once applied. English stays the one gap: two interview-style walkthroughs are owed (Day 6 Pow(x, n), Day 7 LC 779), and the Day 5 one was garbled.
+
+🎯 TOMORROW'S FOCUS (Day 08 — Oct 19)
+Exam mode continues: 5 PM DSA (next problem), no other blocks. English: the owed interview-style walkthroughs for Pow(x, n) (Day 6) and K-th Symbol in Grammar (Day 7). Sunday mock stays paused through Oct 25 (exam mode).

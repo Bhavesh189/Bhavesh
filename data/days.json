@@ -11,15 +11,15 @@
    "logic": 3,
    "speed": 4
   },
-  "title": "Day 1 \u2014 Product of Array Except Self + event loop + processes vs threads"
+  "title": "Day 1 — Product of Array Except Self + event loop + processes vs threads"
  },
  {
   "id": "day-02",
   "date": "2026-10-13",
-  "title": "Day 2 \u2014 3Sum + closures & scope + DBMS #1",
+  "title": "Day 2 — 3Sum + closures & scope + DBMS #1",
   "dsa_pattern": "Two pointers",
   "dsa_problem": "3Sum (LC 15)",
-  "highlight": "Day 2 complete: 3Sum solved with one hint at 30 min (~44 min, 3-level dedup, O(n\u00b2)/O(1)), event-loop re-quiz 4/4 (term inversion fixed in 24h), closures 4/4, DBMS #1 4/4 from zero. AVL theory marked not-understood \u2192 re-teach queued. Concepts up, Speed down; avg 3.25.",
+  "highlight": "Day 2 complete: 3Sum solved with one hint at 30 min (~44 min, 3-level dedup, O(n²)/O(1)), event-loop re-quiz 4/4 (term inversion fixed in 24h), closures 4/4, DBMS #1 4/4 from zero. AVL theory marked not-understood → re-teach queued. Concepts up, Speed down; avg 3.25.",
   "scores": {
    "logic": 3,
    "speed": 3,
@@ -30,7 +30,7 @@
  {
   "id": "day-03",
   "date": "2026-10-14",
-  "title": "Day 3 \u2014 Longest Substring + DBMS keys (project day)",
+  "title": "Day 3 — Longest Substring + DBMS keys (project day)",
   "dsa_problem": "Longest Substring Without Repeating Characters (LC 3)",
   "dsa_pattern": "Sliding window",
   "scores": {
@@ -39,12 +39,12 @@
    "concepts": 3,
    "english": 3
   },
-  "highlight": "Day 3 project day: LC 3 solved in ~10 min (seen before, logged honestly), DBMS #2 half-done and repeating tomorrow, 6\u20137 PM project work (Zulip \u2192 Sat). Avg 3.5, up from 3.25."
+  "highlight": "Day 3 project day: LC 3 solved in ~10 min (seen before, logged honestly), DBMS #2 half-done and repeating tomorrow, 6–7 PM project work (Zulip → Sat). Avg 3.5, up from 3.25."
  },
  {
   "id": "day-06",
   "date": "2026-10-17",
-  "title": "Day 6 \u2014 Pow(x, n) (exam mode)",
+  "title": "Day 6 — Pow(x, n) (exam mode)",
   "dsa_problem": "Pow(x, n) (LC 50)",
   "dsa_pattern": "Recursion",
   "scores": {
@@ -53,6 +53,20 @@
    "concepts": 5,
    "english": null
   },
-  "highlight": "Day 6 (exam mode, DSA only): Pow(x, n) (LC 50) solved via recursive binary exponentiation in ~37 min \u2014 Accepted 309/309, 0ms (100%), 8.40MB (99.78%). Started late after the fresher party; English walkthrough deferred to tomorrow."
+  "highlight": "Day 6 (exam mode, DSA only): Pow(x, n) (LC 50) solved via recursive binary exponentiation in ~37 min — Accepted 309/309, 0ms (100%), 8.40MB (99.78%). Started late after the fresher party; English walkthrough deferred to tomorrow."
+ },
+ {
+  "id": "day-07",
+  "date": "2026-10-18",
+  "title": "Day 7 — K-th Symbol in Grammar (exam mode)",
+  "dsa_pattern": "Recursion",
+  "dsa_problem": "K-th Symbol in Grammar (LC 779)",
+  "scores": {
+   "logic": 5,
+   "speed": 4,
+   "concepts": 5,
+   "english": null
+  },
+  "highlight": "Day 7 (exam mode, DSA only): K-th Symbol in Grammar (LC 779) — first attempt hit MLE building whole rows (the constraints trap flagged at delivery), then solved via parent-child recursion (parent at (k+1)/2; odd k → same, even k → flipped) in ~39 min. Accepted 55/55, 0ms (100%), 7.93MB. English walkthroughs for Day 6 + Day 7 owed."
  }
 ]

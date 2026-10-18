@@ -57,6 +57,7 @@ No build step. No backend. Just push to the repo — GitHub Pages serves it.
 | day-02 | 2026-10-13 | Two pointers | 3.25 |
 | day-03 | 2026-10-14 | Sliding window | 3.5 |
 | day-06 | 2026-10-17 | Recursion | 4.67 (English pending) |
+| day-07 | 2026-10-18 | Recursion | 4.67 (English pending) |
 
 *Baseline (Day 0, Oct 11, 2026): 455 LeetCode solved (176E/247M/32H) · CGPA 9.20/10 ·
 Go backend @ Obfinity · Web Dev Intern @ Squarecell · CS fundamentals from zero.*

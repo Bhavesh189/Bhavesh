@@ -1,0 +1,11 @@
+🧩 PROBLEM
+K-th Symbol in Grammar (LC 779) — Medium. Day 7 DSA problem, delivered 12:02 PM IST (early, at his request — the 16:30 cron guarded to skip), Oct 18, 2026. Exam mode active — this was the only training block running today.
+
+🏷️ PATTERN
+Recursion (second problem in the pattern — Day 6 Pow(x, n) was the first). Primer before solving: same lens as Day 6 — base case + smaller step; ask how row n relates to row n-1. Rule: 30 min struggle alone, hints only, solution never unprompted.
+
+🧠 MY APPROACH
+12:02 → 12:46, ~39 min. First attempt built the entire row as a string → MLE at n=30 (2^29 chars, ~500MB) — the exact constraints trap the coach had flagged at delivery. After the hint (parent-child: a symbol's parent sits at position (k+1)/2; odd k → same symbol as parent, even k → flipped), rewrote to return a single symbol instead of building rows. Clean solve after the rewrite.
+
+⏱️ RESULT
+Accepted 55/55, 0ms (100%), 7.93MB. Solved in ~39 min. The Day 1 constraints-first lesson got its sharpest reinforcement yet: he walked straight into the trap he had been warned about — and then fixed it with the right abstraction on the second attempt.
