@@ -1,0 +1,11 @@
+🧩 PROBLEM
+Combination Sum II (LC 40) — Medium. Day 10 DSA problem, delivered 5:00 PM IST (scheduled run), Oct 21, 2026. Exam mode active — this was the only training block running today.
+
+🏷️ PATTERN
+Backtracking (solidify — use-once + dedup twist on Day 9's Combination Sum LC 39). No new-pattern primer (introduced Day 9); brief lens reminder: choose → explore → UNDO → next option. Constraints-first reminder: EACH number used ONCE (not unlimited like LC 39 — read twice); input contains duplicates, so dedup branches is the core skill. Rule: 30 min struggle alone, hints only, solution never unprompted.
+
+🧠 MY APPROACH
+Submitted 17:35 IST (screenshot-verified), ~35 min wall. His code was correct from the start except the dedup guard — he had it written but commented out, carrying the classic `i > 0` bug. Coached in chat to `i > idx && nums[i] == nums[i-1]` (skip only same-level duplicates; deeper-level duplicates are valid branches), and he fixed it and submitted clean.
+
+⏱️ RESULT
+Accepted 176/176, 2 ms, 13.91 MB. The dedup distinction (same-level skip vs deeper-level valid) is the exact lesson Day 9's LC 39 primer was building toward. Per the training log: backtracking now 2 problems solid (LC 39 + LC 40) → Day 11 advances to TREES.
