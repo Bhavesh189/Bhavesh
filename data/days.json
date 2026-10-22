@@ -82,5 +82,19 @@
    "english": null
   },
   "highlight": "Day 10 (exam mode, DSA only): Combination Sum II (LC 40) solved in ~35 min — Accepted 176/176, 2 ms, 13.91 MB. Dedup guard was written but commented with the classic i > 0 bug; chat coaching fixed it to i > idx && nums[i] == nums[i-1] (same-level skip vs deeper-level valid); clean submit. Backtracking now 2 problems solid → Day 11 advances to TREES. English walkthrough owed."
+ },
+ {
+  "id": "day-09",
+  "date": "2026-10-22",
+  "title": "Day 11 — Diameter of Binary Tree (exam mode)",
+  "dsa_problem": "Diameter of Binary Tree (LC 543)",
+  "dsa_pattern": "Trees",
+  "scores": {
+   "logic": 5,
+   "speed": null,
+   "concepts": 5,
+   "english": 2.5
+  },
+  "highlight": "Day 11 (exam mode, DSA only): Diameter of Binary Tree (LC 543) — trees pattern debut, solved correctly on first review (single-pass post-order, O(n)/O(h)). Logic 5, Concepts 5; English walkthrough delivered 2.5 (rambling, no complexity close). 0 syllabus topics marked done."
  }
 ]

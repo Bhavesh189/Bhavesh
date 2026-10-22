@@ -1,0 +1,12 @@
+📊 SCORECARD (1–5 vs yesterday)
+Logic: 5 | Speed: not reported | Concepts: 5 | English: 2.5
+Day 11 complete — DSA only (exam mode): Diameter of Binary Tree (LC 543) solved correctly on first review 17:24 IST. Single-pass post-order, height returned upward, O(n)/O(h).
+
+📌 HIGHLIGHT
+Exam-mode day 7: only the DSA block ran (all other blocks paused Oct 17–25 per his order). Trees pattern debut (Day 11): Diameter of Binary Tree (LC 543) — primer + constraints reminder (diameter = EDGES, not nodes) delivered with the problem 5:00 PM scheduled; his code was correct on first review. Coaching: dead `int ans` variable; pair<int,int> state over-engineered → a single int best-diameter is cleaner; +1/−2 node convention works but is error-prone (cleaner: height in nodes with null=0, diameter = lh+rh). Interview follow-up posed: skewed tree → recursion depth = n (stack risk). English walkthrough delivered 17:29 IST: 2.5 — idea communicated, but rambling, no complexity statement, 'nodes' → 'notes'. Syllabus: DSA topic 15 (Tree recursion patterns — target 3 mediums + return contract) NOT marked Done — only 1 medium recorded; conservative rule keeps it open. 0 topics marked done today.
+
+📈 TREND
+Logic 5 across Days 6–11 (every exam-mode DSA solve). Concepts 5: the post-order return-contract lens transferred straight from recursion (Days 6–7). Speed not reported today. English 2.5: walkthrough delivered but the same framing/rambling/no-complexity gap persists; walkthroughs for Days 6, 7, 10 and the garbled Day 5 remain owed.
+
+🎯 TOMORROW'S FOCUS (training Day 12, publishes as day-10 — Oct 23)
+Exam mode continues: 5 PM DSA — second trees problem (pattern advances only once trees is solid). English: the owed interview-style walkthroughs for Pow(x, n) (Day 6), K-th Symbol in Grammar (Day 7), Combination Sum II (Day 10), plus Day 5's garbled one still unrepaired. Sunday mock stays paused through Oct 25 (exam mode).

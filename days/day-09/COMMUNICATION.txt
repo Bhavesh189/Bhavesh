@@ -1,0 +1,8 @@
+🎤 ENGLISH PRACTICE
+English block is paused in exam mode — but an interview-style walkthrough for today's problem WAS delivered in chat 17:29 IST. Core idea communicated (traverse all nodes, combine left+right counts, keep the max, −2 handles the edges/off-by-one) but delivery rambled, no complexity statement, and 'nodes' came out as 'notes'. English 2.5 — a polish model was given (framing → post-order idea → combine step → complexity close).
+
+💬 STAR STORY / Q&A
+Paused (exam mode).
+
+📈 NOTES
+English was actually scored today (2.5) and the known delivery gap is exactly what the log keeps flagging: no framing, rambling middle, no complexity close. English debt grows on the rest of the backlog: interview-style walkthroughs still owed for Day 6 Pow(x, n), Day 7 K-th Symbol in Grammar, Day 10 Combination Sum II — and Day 5's garbled one is still unrepaired.

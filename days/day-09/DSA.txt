@@ -1,0 +1,11 @@
+🧩 PROBLEM
+Diameter of Binary Tree (LC 543) — Medium. Day 11 DSA problem, delivered 5:00 PM IST (scheduled run), Oct 22, 2026. Exam mode active — this was the only training block running today.
+
+🏷️ PATTERN
+Trees (NEW pattern — backtracking declared solid at Day 10 with LC 39 + LC 40, so the program advanced per the fixed syllabus order). Primer delivered with the problem: recursive structure → recursion on structure; top-down vs bottom-up/post-order; base case = null node; trust the contract, only the combine step is yours. Constraints-first reminder: diameter = number of EDGES, not nodes — read twice. Rule: 30 min struggle alone, hints only, solution never unprompted.
+
+🧠 MY APPROACH
+Code pasted in chat 17:24 IST — solved correctly on first review. Single-pass post-order: height returned upward, best diameter tracked via a pair<int,int> reference; O(n) time, O(h) space. Coaching points from the review: (1) unused `int ans` dead variable — delete before submit; (2) pair<int,int> state is over-engineered — a single int best-diameter is cleaner and avoids doing the l+r-2 arithmetic in two places; (3) his +1/−2 node-count convention works but is error-prone — cleaner interview convention: height in nodes with null=0, diameter through a node = leftHeight + rightHeight. Interview follow-up posed: skewed tree → recursion depth = n (stack risk).
+
+⏱️ RESULT
+SOLVED correctly on first review. The post-order lens (return contract + global accumulator) transferred straight from recursion Days 6–7. Per the training log: Logic 5 · Concepts 5. Trees is now 1 medium deep; syllabus DSA topic 15 (Tree recursion patterns — 3 mediums + return contract each) stays open by the conservative rule.
