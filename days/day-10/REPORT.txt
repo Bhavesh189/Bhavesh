@@ -1,0 +1,12 @@
+📊 SCORECARD (1–5 vs yesterday)
+Logic: 5 | Speed: not reported | Concepts: 5 | English: pending
+Day 12 complete — DSA only (exam mode): Kth Largest Element in an Array (LC 215) solved 17:16 IST with a full max-heap, O(n log n)/O(n); then the size-k min-heap variant derived and coded by him, Accepted 47/47 at 18:07 IST, 42 ms.
+
+📌 HIGHLIGHT
+Exam-mode day 8: only the DSA block ran (all other blocks paused Oct 17–25 per his order). Heaps pattern debut (Day 12): primer delivered 5:00 PM scheduled — heap as min/max-on-top array-backed tree with O(log n) insert/pop, the "repeatedly needs the current best/worst" reach-for lens; constraints reminder (duplicates COUNT toward kth largest). His first solution was correct but O(n log n). The coaching win: he argued the full-insert cost was forced ("sab ko insert karna hoga"), and the concrete walkthrough ([5,1,9,3,7,2,8], k=2 — heap never exceeds 2, most elements rejected by one top comparison) got him to derive the size-k min-heap himself: O(n log k)/O(k), Accepted 47/47. Syllabus: DSA topic 22 (Heap theory + implementation) marked In progress — 1 medium recorded; conservative rule keeps the topic open. 0 topics marked done today.
+
+📈 TREND
+Logic 5 across Days 6–12 (every exam-mode DSA solve). Concepts 5: abstract hint resisted → concrete walkthrough → he coded the optimization independently (the self-derived win). Speed not reported today. English walkthrough still pending (debt now: Days 5, 6, 7, 10, 11, 12).
+
+🎯 TOMORROW'S FOCUS (training Day 13 — Oct 24)
+Exam mode continues: 5 PM DSA — second heaps problem (pattern advances only once heaps is solid). English: the owed interview-style walkthroughs for Pow(x, n) (Day 6), K-th Symbol in Grammar (Day 7), Combination Sum II (Day 10), Diameter of Binary Tree (Day 11), Kth Largest (Day 12), plus Day 5's garbled one still unrepaired. Sunday mock stays paused through Oct 25 (exam mode).

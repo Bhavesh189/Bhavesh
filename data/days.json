@@ -96,5 +96,19 @@
    "english": 2.5
   },
   "highlight": "Day 11 (exam mode, DSA only): Diameter of Binary Tree (LC 543) — trees pattern debut, solved correctly on first review (single-pass post-order, O(n)/O(h)). Logic 5, Concepts 5; English walkthrough delivered 2.5 (rambling, no complexity close). 0 syllabus topics marked done."
+ },
+ {
+  "id": "day-10",
+  "date": "2026-10-23",
+  "title": "Day 12 — Kth Largest Element in an Array (exam mode)",
+  "dsa_problem": "Kth Largest Element in an Array (LC 215)",
+  "dsa_pattern": "Heaps",
+  "scores": {
+   "logic": 5,
+   "speed": null,
+   "concepts": 5,
+   "english": null
+  },
+  "highlight": "Day 12 (exam mode, DSA only): Kth Largest Element in an Array (LC 215) — heaps pattern debut, solved with full max-heap O(n log n)/O(n), then derived the size-k min-heap O(n log k)/O(k) himself from a concrete walkthrough — Accepted 47/47, 42 ms. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done."
  }
 ]

@@ -1,0 +1,8 @@
+🎤 ENGLISH PRACTICE
+English block is paused in exam mode — and today's walkthrough is still owed. Per the training log: English walkthrough pending for Day 12's Kth Largest (LC 215), including the size-k min-heap variant he derived himself.
+
+💬 STAR STORY / Q&A
+Paused (exam mode).
+
+📈 NOTES
+English debt keeps growing: interview-style walkthroughs still owed for Day 6 Pow(x, n), Day 7 K-th Symbol in Grammar, Day 10 Combination Sum II, Day 11 Diameter of Binary Tree (delivered 2.5), Day 12 Kth Largest (pending) — and Day 5's garbled one is still unrepaired.

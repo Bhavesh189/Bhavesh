@@ -1,0 +1,13 @@
+🧩 PROBLEM
+Kth Largest Element in an Array (LC 215) — Medium. Day 12 DSA problem, delivered 5:00 PM IST (scheduled run), Oct 23, 2026. Exam mode active — this was the only training block running today.
+
+🏷️ PATTERN
+Heaps (NEW pattern — trees declared solid at Day 11 with LC 543 Logic 5/Concepts 5, so the program advanced per the fixed syllabus order). Primer delivered with the problem: a heap is a binary tree with the min/max always on top, array-backed, O(log n) insert/pop — idea only, no solution. Reach for it when the problem repeatedly needs the current best/worst (top-k, merging streams, scheduling). Rule: 30 min struggle alone, hints only, solution never unprompted. Constraints-first reminder: duplicates COUNT toward the kth largest — read twice.
+
+🧠 MY APPROACH
+Code pasted in chat 17:16 IST — solved correctly: full max-heap (push all n elements, pop k−1), O(n log n) time, O(n) space. Per the training log: Logic 5 · Concepts 4.
+The coaching moment: he argued "sab ko insert karna hoga, O(n log n) hi hoga" — so the size-k MIN-heap insight was coached with a concrete walkthrough ([5,1,9,3,7,2,8], k=2 → the heap never exceeds 2, most elements are rejected by one comparison against the top): the cost per op is log(HEAP SIZE), and WE control the heap size → O(n log k) time, O(k) space.
+VARIANT (screenshot 18:08 IST): he implemented the size-k min-heap himself — `greater<int>`, push, pop when size > k, return top — Accepted 47/47, submitted 18:07 IST, runtime 42 ms. He argued O(n log n) was forced, took the concrete counterexample, and derived + coded the optimization himself. Concepts upgraded to 5.
+
+⏱️ RESULT
+SOLVED correctly (two correct solutions: max-heap O(n log n)/O(n), size-k min-heap O(n log k)/O(k), Accepted 47/47). The "self-derived win" pattern: abstract hint ("use a size-k heap") was met with resistance, the concrete walkthrough landed, and he coded the optimized variant independently. Per the training log: Logic 5 · Concepts 5. Heaps is now 1 medium deep; syllabus DSA topic 22 (Heap theory + implementation) stays In progress by the conservative rule.
