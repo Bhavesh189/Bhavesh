@@ -1,0 +1,11 @@
+🧩 PROBLEM
+Merge Intervals (LC 56) — Medium. Day 13 DSA problem, delivered 5:00 PM IST (scheduled run), Oct 24, 2026. Exam mode active — this was the only training block running today.
+
+🏷️ PATTERN
+Intervals (NEW pattern — heaps declared solid at Day 12 with LC 215 Logic 5/Concepts 5 and the size-k min-heap variant Accepted 47/47, so the program advanced per the fixed syllabus order). Primer delivered with the problem: sort by start, then sweep merging overlaps; interval problems are almost always sort-first problems. Constraints-first reminder: intervals may touch at endpoints, e.g. [1,4],[4,5] merge — read the overlap definition twice. Rule: 30 min struggle alone, hints only, solution never unprompted.
+
+🧠 MY APPROACH
+Per the training log: clean sort + single-sweep merge. No hints, no coaching points recorded in the log for this solve — the intervals pattern opened strong.
+
+⏱️ RESULT
+SOLVED 17:12 IST, ~12 min from delivery. Accepted 172/172, runtime 4 ms (beats 70.49%), memory 23.82 MB. Intervals is now 1 medium deep; syllabus DSA topic 27 (Interval fundamentals — target 3 mediums + sort key + sweep invariant stated before coding each) stays open by the conservative rule, marked In progress.

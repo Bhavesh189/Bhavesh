@@ -1,0 +1,12 @@
+📊 SCORECARD (1–5 vs yesterday)
+Logic: not reported | Speed: not reported | Concepts: not reported | English: pending
+Day 13 complete — DSA only (exam mode): Merge Intervals (LC 56) solved 17:12 IST, ~12 min from delivery. Accepted 172/172, 4 ms (beats 70.49%), 23.82 MB.
+
+📌 HIGHLIGHT
+Exam-mode day 9: only the DSA block ran (all other blocks paused Oct 17–25 per his order). Intervals pattern debut (Day 13): primer delivered 5:00 PM scheduled — sort by start, then sweep merging overlaps; interval problems are almost always sort-first problems; constraints reminder (touching endpoints like [1,4],[4,5] merge). Clean sort + single-sweep merge, ~12 min, Accepted 172/172. No scores were reported in the log for today, so none are claimed here. Syllabus: DSA topic 27 (Interval fundamentals — target 3 mediums) marked In progress — 1 medium recorded; conservative rule keeps the topic open. 0 topics marked done today.
+
+📈 TREND
+Logic 5 across Days 6–12 (every exam-mode DSA solve with a reported score); today adds another clean solve, but with no scores reported in the log the streak is recorded as a solve, not a score. Speed: ~12 min today is the fastest exam-mode solve time recorded, but no speed score was given. English walkthrough still pending (debt now: Days 5, 6, 7, 10, 12, 13).
+
+🎯 TOMORROW'S FOCUS (training Day 14 — Oct 25)
+Exam mode continues through Oct 25 (last exam-mode day): 5 PM DSA — next problem in the intervals pattern. English: the owed interview-style walkthroughs for Pow(x, n) (Day 6), K-th Symbol in Grammar (Day 7), Combination Sum II (Day 10), Kth Largest (Day 12), Merge Intervals (Day 13), plus Day 5's garbled one still unrepaired. Sunday mock stays paused through Oct 25 (exam mode).

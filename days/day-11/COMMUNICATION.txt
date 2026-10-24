@@ -1,0 +1,8 @@
+🎤 ENGLISH PRACTICE
+English block is paused in exam mode — and today's walkthrough is still owed. Per the training log: no English walkthrough is recorded for Day 13's Merge Intervals (LC 56), and no scores were reported for today.
+
+💬 STAR STORY / Q&A
+Paused (exam mode).
+
+📈 NOTES
+English debt keeps growing: interview-style walkthroughs still owed for Day 6 Pow(x, n), Day 7 K-th Symbol in Grammar, Day 10 Combination Sum II, Day 12 Kth Largest, and now Day 13 Merge Intervals — and Day 5's garbled one is still unrepaired. (Day 11's walkthrough was delivered and scored 2.5.)
