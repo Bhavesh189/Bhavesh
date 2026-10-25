@@ -11,15 +11,15 @@
       "logic": 3,
       "speed": 4
     },
-    "title": "Day 1 — Product of Array Except Self + event loop + processes vs threads"
+    "title": "Day 1 \u2014 Product of Array Except Self + event loop + processes vs threads"
   },
   {
     "id": "day-02",
     "date": "2026-10-13",
-    "title": "Day 2 — 3Sum + closures & scope + DBMS #1",
+    "title": "Day 2 \u2014 3Sum + closures & scope + DBMS #1",
     "dsa_pattern": "Two pointers",
     "dsa_problem": "3Sum (LC 15)",
-    "highlight": "Day 2 complete: 3Sum solved with one hint at 30 min (~44 min, 3-level dedup, O(n²)/O(1)), event-loop re-quiz 4/4 (term inversion fixed in 24h), closures 4/4, DBMS #1 4/4 from zero. AVL theory marked not-understood → re-teach queued. Concepts up, Speed down; avg 3.25.",
+    "highlight": "Day 2 complete: 3Sum solved with one hint at 30 min (~44 min, 3-level dedup, O(n\u00b2)/O(1)), event-loop re-quiz 4/4 (term inversion fixed in 24h), closures 4/4, DBMS #1 4/4 from zero. AVL theory marked not-understood \u2192 re-teach queued. Concepts up, Speed down; avg 3.25.",
     "scores": {
       "logic": 3,
       "speed": 3,
@@ -30,7 +30,7 @@
   {
     "id": "day-03",
     "date": "2026-10-14",
-    "title": "Day 3 — Longest Substring + DBMS keys (project day)",
+    "title": "Day 3 \u2014 Longest Substring + DBMS keys (project day)",
     "dsa_problem": "Longest Substring Without Repeating Characters (LC 3)",
     "dsa_pattern": "Sliding window",
     "scores": {
@@ -39,12 +39,12 @@
       "concepts": 3,
       "english": 3
     },
-    "highlight": "Day 3 project day: LC 3 solved in ~10 min (seen before, logged honestly), DBMS #2 half-done and repeating tomorrow, 6–7 PM project work (Zulip → Sat). Avg 3.5, up from 3.25."
+    "highlight": "Day 3 project day: LC 3 solved in ~10 min (seen before, logged honestly), DBMS #2 half-done and repeating tomorrow, 6\u20137 PM project work (Zulip \u2192 Sat). Avg 3.5, up from 3.25."
   },
   {
     "id": "day-06",
     "date": "2026-10-17",
-    "title": "Day 6 — Pow(x, n) (exam mode)",
+    "title": "Day 6 \u2014 Pow(x, n) (exam mode)",
     "dsa_problem": "Pow(x, n) (LC 50)",
     "dsa_pattern": "Recursion",
     "scores": {
@@ -53,12 +53,12 @@
       "concepts": 5,
       "english": null
     },
-    "highlight": "Day 6 (exam mode, DSA only): Pow(x, n) (LC 50) solved via recursive binary exponentiation in ~37 min — Accepted 309/309, 0ms (100%), 8.40MB (99.78%). Started late after the fresher party; English walkthrough deferred to tomorrow."
+    "highlight": "Day 6 (exam mode, DSA only): Pow(x, n) (LC 50) solved via recursive binary exponentiation in ~37 min \u2014 Accepted 309/309, 0ms (100%), 8.40MB (99.78%). Started late after the fresher party; English walkthrough deferred to tomorrow."
   },
   {
     "id": "day-07",
     "date": "2026-10-18",
-    "title": "Day 7 — K-th Symbol in Grammar (exam mode)",
+    "title": "Day 7 \u2014 K-th Symbol in Grammar (exam mode)",
     "dsa_pattern": "Recursion",
     "dsa_problem": "K-th Symbol in Grammar (LC 779)",
     "scores": {
@@ -67,12 +67,12 @@
       "concepts": 5,
       "english": null
     },
-    "highlight": "Day 7 (exam mode, DSA only): K-th Symbol in Grammar (LC 779) — first attempt hit MLE building whole rows (the constraints trap flagged at delivery), then solved via parent-child recursion (parent at (k+1)/2; odd k → same, even k → flipped) in ~39 min. Accepted 55/55, 0ms (100%), 7.93MB. English walkthroughs for Day 6 + Day 7 owed."
+    "highlight": "Day 7 (exam mode, DSA only): K-th Symbol in Grammar (LC 779) \u2014 first attempt hit MLE building whole rows (the constraints trap flagged at delivery), then solved via parent-child recursion (parent at (k+1)/2; odd k \u2192 same, even k \u2192 flipped) in ~39 min. Accepted 55/55, 0ms (100%), 7.93MB. English walkthroughs for Day 6 + Day 7 owed."
   },
   {
     "id": "day-08",
     "date": "2026-10-21",
-    "title": "Day 10 — Combination Sum II (exam mode)",
+    "title": "Day 10 \u2014 Combination Sum II (exam mode)",
     "dsa_problem": "Combination Sum II (LC 40)",
     "dsa_pattern": "Backtracking",
     "scores": {
@@ -81,12 +81,12 @@
       "concepts": 5,
       "english": null
     },
-    "highlight": "Day 10 (exam mode, DSA only): Combination Sum II (LC 40) solved in ~35 min — Accepted 176/176, 2 ms, 13.91 MB. Dedup guard was written but commented with the classic i > 0 bug; chat coaching fixed it to i > idx && nums[i] == nums[i-1] (same-level skip vs deeper-level valid); clean submit. Backtracking now 2 problems solid → Day 11 advances to TREES. English walkthrough owed."
+    "highlight": "Day 10 (exam mode, DSA only): Combination Sum II (LC 40) solved in ~35 min \u2014 Accepted 176/176, 2 ms, 13.91 MB. Dedup guard was written but commented with the classic i > 0 bug; chat coaching fixed it to i > idx && nums[i] == nums[i-1] (same-level skip vs deeper-level valid); clean submit. Backtracking now 2 problems solid \u2192 Day 11 advances to TREES. English walkthrough owed."
   },
   {
     "id": "day-09",
     "date": "2026-10-22",
-    "title": "Day 11 — Diameter of Binary Tree (exam mode)",
+    "title": "Day 11 \u2014 Diameter of Binary Tree (exam mode)",
     "dsa_problem": "Diameter of Binary Tree (LC 543)",
     "dsa_pattern": "Trees",
     "scores": {
@@ -95,12 +95,12 @@
       "concepts": 5,
       "english": 2.5
     },
-    "highlight": "Day 11 (exam mode, DSA only): Diameter of Binary Tree (LC 543) — trees pattern debut, solved correctly on first review (single-pass post-order, O(n)/O(h)). Logic 5, Concepts 5; English walkthrough delivered 2.5 (rambling, no complexity close). 0 syllabus topics marked done."
+    "highlight": "Day 11 (exam mode, DSA only): Diameter of Binary Tree (LC 543) \u2014 trees pattern debut, solved correctly on first review (single-pass post-order, O(n)/O(h)). Logic 5, Concepts 5; English walkthrough delivered 2.5 (rambling, no complexity close). 0 syllabus topics marked done."
   },
   {
     "id": "day-10",
     "date": "2026-10-23",
-    "title": "Day 12 — Kth Largest Element in an Array (exam mode)",
+    "title": "Day 12 \u2014 Kth Largest Element in an Array (exam mode)",
     "dsa_problem": "Kth Largest Element in an Array (LC 215)",
     "dsa_pattern": "Heaps",
     "scores": {
@@ -109,12 +109,12 @@
       "concepts": 5,
       "english": null
     },
-    "highlight": "Day 12 (exam mode, DSA only): Kth Largest Element in an Array (LC 215) — heaps pattern debut, solved with full max-heap O(n log n)/O(n), then derived the size-k min-heap O(n log k)/O(k) himself from a concrete walkthrough — Accepted 47/47, 42 ms. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done."
+    "highlight": "Day 12 (exam mode, DSA only): Kth Largest Element in an Array (LC 215) \u2014 heaps pattern debut, solved with full max-heap O(n log n)/O(n), then derived the size-k min-heap O(n log k)/O(k) himself from a concrete walkthrough \u2014 Accepted 47/47, 42 ms. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done."
   },
   {
     "id": "day-11",
     "date": "2026-10-24",
-    "title": "Day 13 — Merge Intervals (exam mode)",
+    "title": "Day 13 \u2014 Merge Intervals (exam mode)",
     "dsa_problem": "Merge Intervals (LC 56)",
     "dsa_pattern": "Intervals",
     "scores": {
@@ -123,6 +123,20 @@
       "concepts": null,
       "english": null
     },
-    "highlight": "Day 13 (exam mode, DSA only): Merge Intervals (LC 56) — intervals pattern debut, clean sort + single-sweep merge in ~12 min — Accepted 172/172, 4 ms (beats 70.49%), 23.82 MB. No scores reported in the log today; English walkthrough pending. 0 syllabus topics marked done."
+    "highlight": "Day 13 (exam mode, DSA only): Merge Intervals (LC 56) \u2014 intervals pattern debut, clean sort + single-sweep merge in ~12 min \u2014 Accepted 172/172, 4 ms (beats 70.49%), 23.82 MB. No scores reported in the log today; English walkthrough pending. 0 syllabus topics marked done."
+  },
+  {
+    "id": "day-12",
+    "date": "2026-10-25",
+    "title": "Day 14 \u2014 Insert Interval (exam mode)",
+    "dsa_problem": "Insert Interval (LC 57)",
+    "dsa_pattern": "Intervals",
+    "scores": {
+      "logic": null,
+      "speed": null,
+      "concepts": null,
+      "english": null
+    },
+    "highlight": "Day 14 (exam mode, DSA only): Insert Interval (LC 57) \u2014 first version O(n log n) via append + Day 13 merge, then the O(n) three-phase rewrite (before / overlapping / after, no sort) \u2014 Accepted 158/158, 0 ms (beats 100%), 21.68 MB. No scores reported in the log today; English walkthrough pending. 0 syllabus topics marked done."
   }
 ]

@@ -1,0 +1,17 @@
+🎯 WHY THIS MATTERS
+Full-stack block paused — exam mode (Oct 17–25, 2026). Only the Sunday DSA block ran today. The full-stack track (frontend → backend → databases → distributed systems, interview-question driven) resumes after exams.
+
+📖 CORE CONCEPT
+No lesson today (exam mode — paused).
+
+🔬 BEYOND YOUTUBE
+No lesson today (exam mode — paused).
+
+💼 INTERVIEW LENS
+No lesson today (exam mode — paused).
+
+❓ QUIZ
+No quiz today (exam mode — paused).
+
+🙋 DOUBTS
+Doubts are still welcome anytime — exam mode only pauses scheduled lessons, not questions.

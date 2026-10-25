@@ -1,0 +1,12 @@
+📊 SCORECARD (1–5 vs yesterday)
+Logic: not reported | Speed: not reported | Concepts: not reported | English: pending
+Day 14 complete — DSA only (exam mode): Insert Interval (LC 57) solved, first version O(n log n) via append + merge, then the O(n) three-phase rewrite submitted 5:40 PM IST — Accepted 158/158, 0 ms (beats 100%), 21.68 MB (beats 72.82%).
+
+📌 HIGHLIGHT
+Exam-mode day 10: only the DSA block ran (all other blocks paused Oct 17–25 per his order). Intervals second problem (Day 14): delivered in chat ~1:20 PM at his request, ahead of the 4:30 PM Sunday cron (guard triggered, no duplicate sent). First version appended the new interval and reused the Day 13 merge — logic correct, but empty-input safety came only from push-first; coaching set the interview-bar O(n) three-phase version (before / overlapping / after, no sort), which he then wrote and submitted — Accepted 158/158, 0 ms. No scores were reported in the log for today, so none are claimed here. Syllabus: DSA topic 27 (Interval fundamentals — target 3 mediums) stays In progress — 2 of 3 mediums recorded. 0 topics marked done today.
+
+📈 TREND
+Logic 5 across Days 6–12 (every exam-mode DSA solve with a reported score); Days 13–14 add two more clean solves, but with no scores reported in the log they are recorded as solves, not scores. The Day 14 rewrite shows the coaching loop working: first version correct, then the faster interview-bar version derived and submitted the same day. English walkthrough still pending (debt now: Days 5, 6, 7, 10, 12, 13, 14).
+
+🎯 TOMORROW'S FOCUS (training Day 15 — Oct 26)
+Exam mode ends today (Oct 25): the full program resumes — DSA intervals third medium (to close syllabus DSA topic 27), plus the paused full-stack, CS fundamentals, and English blocks. Owed interview-style walkthroughs: Pow(x, n) (Day 6), K-th Symbol in Grammar (Day 7), Combination Sum II (Day 10), Kth Largest (Day 12), Merge Intervals (Day 13), Insert Interval (Day 14), plus Day 5's garbled one still unrepaired. Sunday mock stays paused through Oct 25 (exam mode).

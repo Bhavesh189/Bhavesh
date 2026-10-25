@@ -1,0 +1,11 @@
+🧩 PROBLEM
+Insert Interval (LC 57) — Medium. Day 14 DSA problem, delivered in chat ~1:20 PM IST at his request, Oct 25, 2026 — ahead of the 4:30 PM Sunday cron (the cron guard triggered on the already-delivered problem, so no duplicate was sent). Exam mode active — this was the only training block running today.
+
+🏷️ PATTERN
+Intervals (second problem — introduced Day 13 with Merge Intervals, not new). No new-pattern primer. Constraints-first reminder: the new interval may land before, inside, or after the existing intervals — read twice. Rule: 30 min struggle alone, hints only, solution never unprompted.
+
+🧠 MY APPROACH
+First version (code pasted 2:02 PM IST): append the new interval, then reuse the Day 13 merge — O(n log n). Logic correct; empty-input safety comes only from push-first (merge alone would crash on an empty list). Coaching point: the interview-bar version is O(n) single-pass in three phases (before / overlapping / after) with no sort — rewrite challenge posed. He took it: the O(n) three-phase rewrite was confirmed, submitted 5:40 PM IST.
+
+⏱️ RESULT
+SOLVED. First version: logic correct (O(n log n) via append + merge). Rewrite: Accepted 158/158, runtime 0 ms (beats 100%), memory 21.68 MB (beats 72.82%) — O(n) three-phase, no sort. Solve time not reported in the log. Intervals is now 2 mediums deep; syllabus DSA topic 27 (Interval fundamentals — target 3 mediums + sort key + sweep invariant stated before coding each) stays In progress by the conservative rule — 2 of 3 mediums, and no English walkthrough recorded today.
