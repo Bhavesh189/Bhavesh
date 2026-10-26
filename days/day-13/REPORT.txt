@@ -1,0 +1,14 @@
+📊 SCORECARD (1–5 vs yesterday)
+Logic: 5 | Speed: not reported | Concepts: 5 | English: 2.5
+Avg of reported scores: 4.17 (speed not reported).
+
+Day 15 complete — normal mode resumed: exam mode ended 2:21 PM IST on his order ("switch to normal mode"). DSA: Number of Islands (LC 200, Graphs — new pattern) solved in ~8 min via recursive DFS, Logic 5 · Concepts 5. Full-stack: Async patterns lesson + quiz 1/4 (Q1 mechanism correct; callback-to-promise conversion still missing). CS: DBMS #2 re-teach + quiz 2.5/4 (minimality + composite PK still to lock). Behavioral: "Tell me about yourself" intro iterated to v2 (no name/college/resume repeat); practice-back pending.
+
+📌 HIGHLIGHT
+First full-program day since exam mode: all four blocks ran. Graphs opened with a clean ~8-min solve (verified on both LC examples, all-water, single cell), but the coaching notes are honest — dead code he self-flagged (dfs cleanup is his), recursion-depth follow-up posed, and both quizzes show real gaps: async 1/4 and DBMS 2.5/4, each with same-turn re-teach and a queued re-check. No scores invented: Speed was not scored in the log, so none is claimed. Syllabus: 0 topics marked done today — Backend 2 and DBMS #2 explicitly NOT Done until their quizzes pass, and Graphs topics need more mediums/implementations before Done.
+
+📈 TREND
+Logic 5 continues the clean-solve streak (Days 6–15 solves, where scored). English walkthroughs stay at 2.5 (Day 11, Day 15) — framing + complexity close are the persistent gap, not technical content. The coaching loop worked twice today: quiz gaps got same-turn re-teaches plus queued re-checks (Backend 2 re-quiz Tue 6 PM opener; DBMS minimality/composite lock-in later).
+
+🎯 TOMORROW'S FOCUS (training Day 16 — Oct 27)
+CS fundamentals moves to Computer Networks IN-DEPTH (his redirect). Full-stack opener: Backend 2 spaced re-quiz. Still owed: DBMS #2 minimality + composite PK lock-in, OS #4 Process lifecycle and states, intro practice-back (v2), and the Day 15 English re-delivery.

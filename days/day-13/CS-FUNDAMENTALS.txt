@@ -1,0 +1,20 @@
+🎯 WHY THIS MATTERS
+CS fundamentals block resumed — normal mode is back after exam mode (Oct 17–25). Track: OS → DBMS → Networks → Linux, taught from absolute zero.
+
+📖 CORE CONCEPT
+DBMS #2 re-teach completion — Tables, Schemas & Keys. Day 3's lesson was only partially absorbed (he asked to repeat it); Q1 was done then, Q2–Q4 were owed since Day 3. Compact re-teach delivered in chat: table vs schema vs instance; super vs candidate vs primary vs foreign keys; PK constraints. Fresh Q2–Q4 quiz posed.
+
+🔬 BEYOND YOUTUBE
+Minimality is what separates a super key from a candidate key, and a composite PK is still ONE primary key — both points came out of his quiz answers (see Quiz).
+
+💼 INTERVIEW LENS
+Key terminology is interview vocabulary: picking the right PK with reasons, and knowing why a foreign key matters (orphan rows otherwise).
+
+❓ QUIZ
+Answered 6:25 PM IST (Devanagari transcript): 2.5/4. Q2 PARTIAL — said id and email are super keys because both unique; the label "super key" is right for the SET {id, email}, but the reasoning missed minimality: the set is a super key but NOT a candidate key, since id alone suffices. Q3 CORRECT — without a FK, an order would not point to any customer (orphan row), so ownership is unknowable. Q4a CORRECT — a PK can never be NULL because a row must be uniquely identifiable (NULL cannot identify). Q4b WRONG — claimed two PKs are possible but "we just don't keep them"; correction: one PK per table is a RULE, not a preference; what exists is a COMPOSITE PK (multiple columns forming one PK, e.g. (student_id, course_id)).
+
+🙋 DOUBTS / QUEUED
+DBMS #2 held as nearly-done: minimality + composite PK to lock in a later quick re-check — not blocking his communication discussion, per his sequencing order this turn. Syllabus DBMS topic NOT marked Done (quiz 2.5/4 does not pass).
+
+📌 REDIRECT (his order 6:29 PM IST, Oct 26)
+CS fundamentals moves to Computer Networks IN-DEPTH from tomorrow (Oct 27) — his explicit call. Pending items NOT dropped, to slot later: DBMS #2 minimality + composite PK lock-in, OS #4 Process lifecycle and states (Not started).

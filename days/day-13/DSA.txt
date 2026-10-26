@@ -1,0 +1,14 @@
+🧩 PROBLEM
+Number of Islands (LC 200) — Medium. Day 15 DSA problem, delivered in chat ~2:25 PM IST at his request on Oct 26, 2026 — ahead of the 5:00 PM cron. NORMAL MODE RESUMED today (his order 2:21 PM IST "switch to normal mode" — treated as exit exam mode; exam mode ran Oct 17–25).
+
+🏷️ PATTERN
+Graphs (NEW pattern — intervals solid: Day 13 LC 56 Accepted 172/172 in ~12 min, Day 14 LC 57 O(n) three-phase rewrite confirmed → advance per curriculum order). Primer delivered with the problem: a grid cell is a node, adjacent land is an edge; BFS/DFS floods one whole connected component; mark visited so islands are not recounted — idea only, no solution. Constraints-first reminder: grid up to 300×300 = 90,000 cells — recursion depth is a real risk for DFS; read twice. Rule: 30 min struggle alone, hints only, solution never unprompted.
+
+🧠 MY APPROACH
+Recursive DFS with visited marking and bounds checks correct. Code pasted 2:31 PM IST, ~8 min from delivery. Verified by local run: LC examples → 1 and 3, all-water → 0, single cell → 1.
+
+⏱️ RESULT
+SOLVED. Dead code self-identified by him: `res += grid[i][j] + dfs(...)` accumulates meaningless values (char '1' = 49 + bool returns) and is never used — ignored per his instruction; cleanup (dfs → void + ans++) is his to do. Coaching: interview follow-up = recursion depth on an all-'1' 300×300 grid (90,000 deep → stack overflow risk; iterative stack/BFS is the answer); optional polish = mark grid '0' in place instead of a vis array. Logic 5 · Concepts 5.
+
+📚 SYLLABUS
+Graphs opened, but no topic marked Done today (conservative rule): DSA topic 30 (Graph representation + BFS/DFS) needs BFS and iterative DFS implemented from scratch plus the islands medium — today used recursive DFS only, no BFS/iterative implementation. DSA topic 31 (Grid graphs & components) needs 3 mediums with the node/edge mapping stated first each time — today is 1 of 3. Both stay Not started.

@@ -1,0 +1,11 @@
+🎤 ENGLISH PRACTICE
+Day 15 DSA walkthrough delivered 5:51 PM IST (Devanagari transcript): core idea communicated (find islands in a matrix, DFS, track visited, count) but the same delivery gaps as before — no framing sentence, DFS→count link unclear, no complexity close, plus "island" pronounced as "Iceland" (आइसलैंड). English 2.5/5. Polish model given; one re-delivery requested.
+
+💬 STAR STORY / BEHAVIORAL
+"Tell me about yourself" intro — his doubt, same turn. He explicitly REJECTED the generic resume-repeat intro (name/college/internships/projects list — "resume unke haath me hai, dobara repeat nahi karna"). v1 delivered: structure identity → proof → direction, no name/college/city, proofs behavioral (problem-solving approach, 300+ day consistency streak, teaching/explaining drive, end-to-end ownership). Explained first in Roman Hindi, then a speakable English version (~90 sec). He has NOT yet practiced/delivered it back — practice pending.
+
+💬 INTRO v2 (his feedback 9:39 PM IST)
+v1 felt "thoda sahi nahi" / too generic — he wants the intro to reveal everything about him. v2 delivered: same no-name/no-college/no-resume rule, but more specific to him — problems-first (not technologies-first), depth over breadth, full-chain ownership (frontend to real traffic), consistency streak, explain-to-learn test, zero-to-production direction. Practice-back still pending.
+
+📈 NOTES
+English walkthrough framing gap persists (2.5/5, same as Day 11) — framing + complexity close still missing. Behavioral intro now at v2, awaiting his practice-back.

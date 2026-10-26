@@ -63,6 +63,7 @@ No build step. No backend. Just push to the repo — GitHub Pages serves it.
 | day-10 | 2026-10-23 | Heaps | 5.0 (speed + English pending) |
 | day-11 | 2026-10-24 | Intervals | not scored (no scores reported) |
 | day-12 | 2026-10-25 | Intervals | not scored (no scores reported) |
+| day-13 | 2026-10-26 | Graphs | 4.17 (speed not reported) |
 
 *Baseline (Day 0, Oct 11, 2026): 455 LeetCode solved (176E/247M/32H) · CGPA 9.20/10 ·
 Go backend @ Obfinity · Web Dev Intern @ Squarecell · CS fundamentals from zero.*

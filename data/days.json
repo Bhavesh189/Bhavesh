@@ -138,5 +138,19 @@
       "english": null
     },
     "highlight": "Day 14 (exam mode, DSA only): Insert Interval (LC 57) \u2014 first version O(n log n) via append + Day 13 merge, then the O(n) three-phase rewrite (before / overlapping / after, no sort) \u2014 Accepted 158/158, 0 ms (beats 100%), 21.68 MB. No scores reported in the log today; English walkthrough pending. 0 syllabus topics marked done."
+  },
+  {
+    "id": "day-13",
+    "date": "2026-10-26",
+    "title": "Day 15 \u2014 Number of Islands + async patterns + DBMS keys + intro v2",
+    "dsa_problem": "Number of Islands (LC 200)",
+    "dsa_pattern": "Graphs",
+    "scores": {
+      "logic": 5,
+      "speed": null,
+      "concepts": 5,
+      "english": 2.5
+    },
+    "highlight": "Day 15 (normal mode resumed): Number of Islands (LC 200, Graphs \u2014 new pattern) solved in ~8 min via recursive DFS, Logic 5 \u00b7 Concepts 5; English walkthrough 2.5 (framing + complexity close still missing); full-stack Async patterns quiz 1/4 and DBMS #2 quiz 2.5/4, each re-taught same turn with re-checks queued; behavioral intro iterated to v2, practice-back pending. 0 syllabus topics marked done."
   }
 ]
