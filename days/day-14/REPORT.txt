@@ -1,0 +1,12 @@
+📊 SCORECARD (1–5 vs yesterday)
+Logic: not reported | Speed: not reported | Concepts: not reported | English: pending
+Day 20 complete in the log — DSA only: Edit Distance (LC 72) solved 15:43 IST, Accepted 1149/1149, 12 ms (beats 21.71%), 13.28 MB (beats 42.05%). No scores were reported in the log for today, so none are claimed here. No formal 9:45 PM report section exists in the log for Day 20; the entry's completed DSA result is what is published.
+
+📌 HIGHLIGHT
+FIRST Hard problem solved. Edit Distance (LC 72, DP 2D — second problem in the sub-pattern after Day 19's LCS) via bottom-up 2D DP: (m+1)x(n+1) table, dp[i][0]=i, dp[0][j]=j, match → dp[i-1][j-1], mismatch → 1 + min(delete/insert/replace). Honest scaffolding record: greedy instinct corrected via the horse/ros counterexample, dp[i][j] meaning took 3 attempts, plus scaffold and 3 bug fixes (match=0, replace-only, swap without m,n swap) before the operation → remaining-prefixes mapping clicked. Follow-up offered: space-optimized two-row variant. English walkthrough pending. Syllabus: 0 topics marked done today — String DP I (DSA topic 51) is 2 of 3 solved but stays Not started until the third problem lands and the approach is explained aloud in English.
+
+📈 TREND
+DP progression holding: 1D solid (Days 17–18), 2D now two problems deep (LCS Day 19, Edit Distance Day 20). The day's real gain, per the log, is the derivation — doing an operation and looking at the remaining prefixes to find the cell — rather than memorizing the formula.
+
+🎯 TOMORROW'S FOCUS (training Day 21 — Nov 1)
+Per the log's progression logic: stay in DP 2D (mirroring the Day 17→18 1D pattern of two problems per sub-pattern step) or advance per the coach's call — the log does not yet record tomorrow's pick. Still owed: Edit Distance English walkthrough, two-row space-optimized follow-up, Backend 2 async re-quiz, DBMS #2 minimality + composite PK lock-in, OS #4, intro practice-back.

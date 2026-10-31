@@ -1,0 +1,14 @@
+🧩 PROBLEM
+Edit Distance (LC 72) — Hard. Day 20 DSA problem, delivered 2:11 PM IST early at my request on Oct 31, 2026 — ahead of the 5:00 PM block. Second problem in the DP 2D sub-pattern (Day 19's Longest Common Subsequence was the first), so no new-pattern primer — just a lens reminder: same two-prefix table shape as LCS, but each cell now answers a COST question, not a length question. Constraints-first reminder: only insert/delete/replace — no swap/transpose; empty-string edges; lengths up to 500, so an O(n·m) table is fine but exponential recursion without memo is not. Rule: 30 min struggle alone, hints only, solution never unprompted.
+
+🏷️ PATTERN
+DP 2D (introduced Day 19, not new). Bottom-up table over two prefixes: (m+1)x(n+1); base dp[i][0]=i, dp[0][j]=j; match → dp[i-1][j-1]; mismatch → 1 + min(delete/insert/replace).
+
+🧠 MY APPROACH
+Heavy scaffolding on this one — honestly recorded, because it was my FIRST Hard problem. Greedy instinct corrected via the horse/ros counterexample. The meaning of dp[i][j] took 3 attempts to land (a diagnostic widget was used to locate the gap). Then the scaffold: table size, base cases, loop order, index mapping — plus 3 bug fixes along the way (match=0, replace-only, swap without swapping m,n) — and the mapping derivation that finally clicked: each operation maps to the remaining prefixes it leaves behind.
+
+⏱️ RESULT
+SOLVED — LeetCode Accepted 1149/1149, 12 ms (beats 21.71%), 13.28 MB (beats 42.05%), submitted 15:43 IST. FIRST Hard problem solved. Interview follow-up offered: space-optimized two-row variant. English walkthrough pending.
+
+📚 SYLLABUS
+0 topics marked done today (conservative rule). String DP I (syllabus DSA topic 51: LCS, edit distance, delete operation for two strings) is now 2 of 3 solved — LCS (Day 19) + Edit Distance (Day 20) — but the topic stays Not started until all 3 are solved AND the approach is explained aloud in English before coding, and today's English walkthrough is still pending. No explicit [syllabus: ...] markers in today's log entry.
