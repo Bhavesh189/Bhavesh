@@ -1,0 +1,16 @@
+🧩 PROBLEM
+Unique Paths (LC 62) — Medium. Day 21 DSA problem, delivered ~10:45 AM IST early at my request on Nov 1, 2026 — ahead of the 4:30 PM Sunday block. First problem in the DP 2D Grid sub-flavor (string-2D solid: Day 19 LCS, Day 20 Edit Distance), so a primer was delivered (idea only: the table sits over the grid itself, each cell built from already-solved neighbours since the robot only moves forward; fill start-to-end). Constraints-first reminder: only down/right — no revisits; m,n up to 100, so exponential brute force explodes but a table fits easily; 1x1 grid → 1. Rule: 30 min struggle alone, hints only, solution never unprompted.
+
+🏷️ PATTERN
+DP 2D — Grid (NEW sub-flavor, introduced today). Top-down memoized DP: destination → 1, out-of-bounds → 0, dp[i][j] = down + right. Converted by me to bottom-up for the submission (dp all-1s init, loops from 1, dp[i][j] = dp[i-1][j] + dp[i][j-1], return dp[m-1][n-1]; the recursive solve left commented out).
+
+🧠 MY APPROACH
+Zero hints — primer only. First version: top-down memoized DP over the grid, verified locally on 11/11 tests — both LeetCode examples (28, 3) plus edges 1x1→1, 1x5→1, 5x1→1, 2x2→2, 10x10→48620, 23x12→193536720, 3x3→6. Then I converted it myself to the bottom-up variant for submission. Coaching notes from the log: int is fine for LeetCode (answer ≤ 2×10^9 guaranteed) but long long is the fully general choice; the dp table was sized (m+1)×n though only m rows are used — harmless.
+
+⏱️ RESULT
+SOLVED — LeetCode Accepted 64/64, 1 ms (beats 34.63%), 9.48 MB, submitted 14:01 IST. Day 21 closed. Scorecard: Logic 5, Concepts 5. English walkthrough pending.
+
+EXTRA — Daily Question: Minimum Moves to Equal Array Elements (LC 453), submitted 14:16 IST — Accepted 84/84, 0 ms (beats 100%), 32.13 MB. Insight applied alone: incrementing n-1 elements by 1 equals decrementing 1 element by 1, so the target is the minimum and moves = sum(x - min). O(n) time, O(1) space.
+
+📚 SYLLABUS
+0 topics marked done today (conservative rule). 2D grid DP (syllabus DSA topic 48: Unique paths, minimum path sum, dungeon game) is now 1 of 3 solved — Unique Paths (Day 21) — but the topic stays Not started until all 3 are solved, traversal order is justified via DAG reasoning, and the approach is explained aloud in English before coding. No explicit [syllabus: ...] markers in today's log entry.

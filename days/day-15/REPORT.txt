@@ -1,0 +1,12 @@
+📊 SCORECARD (1–5 vs yesterday)
+Logic: 5 | Speed: not reported | Concepts: 5 | English: pending
+Day 21 complete in the log — DSA only: Unique Paths (LC 62) solved with primer only, zero hints, LeetCode Accepted 64/64, 1 ms (beats 34.63%), 9.48 MB, submitted 14:01 IST; plus the Daily Question LC 453, Accepted 84/84, 0 ms (beats 100%), submitted 14:16 IST. No formal 9:45 PM report section exists in the log for Day 21; the entry's completed DSA result ("Day 21 closed") is what is published, same as Day 20.
+
+📌 HIGHLIGHT
+Grid DP debut, solved clean: Unique Paths (LC 62, DP 2D Grid — new sub-flavor after string-2D) via top-down memoized DP (destination → 1, out-of-bounds → 0, dp[i][j] = down + right), verified 11/11 locally, then converted by me to the bottom-up variant for submission (dp all-1s init, dp[i][j] = dp[i-1][j] + dp[i][j-1]) — Accepted 64/64. Zero hints. Bonus the same afternoon: LC 453 Daily Question, Accepted 84/84 at 0 ms, insight applied alone (increment n-1 = decrement 1, target = minimum). English walkthrough pending. Syllabus: 0 topics marked done today — 2D grid DP (DSA topic 48) is 1 of 3 solved but stays Not started until all 3 land and the approach is explained aloud in English.
+
+📈 TREND
+DP progression holding and widening: 1D solid (Days 17–18), string-2D solid (Days 19–20, incl. the first Hard), grid-2D now opened (Day 21) with a self-converted bottom-up submission. The day's real signal, per the log, is independence: primer only, zero hints, plus an unprompted Daily Question solved the same afternoon.
+
+🎯 TOMORROW'S FOCUS (training Day 22 — Nov 2)
+Per the log's progression logic: stay in DP 2D Grid (mirroring the Day 17→18 1D pattern of two problems per sub-pattern step) or advance per the coach's call — the log does not yet record tomorrow's pick. Still owed: Unique Paths + Edit Distance English walkthroughs, two-row space-optimized Edit Distance follow-up, Backend 2 async re-quiz, DBMS #2 minimality + composite PK lock-in, OS #4, intro practice-back.

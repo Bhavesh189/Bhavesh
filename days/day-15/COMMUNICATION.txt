@@ -1,0 +1,8 @@
+🎤 ENGLISH PRACTICE
+No English walkthrough is recorded for Day 21's Unique Paths (LC 62) — still pending, per the training log. No speed score was reported in the log for today, so none is claimed here.
+
+💬 STAR STORY / BEHAVIORAL
+No behavioral block recorded today. Still pending from earlier days: practice-back of the "Tell me about yourself" intro (v3 ultra-simple delivered Oct 26, ~90 words, memory chain Problem → Tukde → Gehraai → Roz → Poora system).
+
+📈 NOTES
+English walkthrough debt keeps growing: the interview-style walkthrough for Unique Paths (Day 21) joins the owed list, alongside Edit Distance (Day 20) and earlier days. The persistent gap from earlier scored walkthroughs (2.5/5 on Days 11 and 15) is framing + complexity close, not technical content — worth carrying into this one when it is delivered.
