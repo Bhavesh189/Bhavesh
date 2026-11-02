@@ -1,0 +1,16 @@
+🧩 PROBLEM
+Unique Paths II (LC 63) — Medium. Day 22 DSA problem, delivered 4:55 PM IST early at my request on Nov 2, 2026 — ahead of the 5:00 PM cron. Second problem in the DP 2D Grid sub-flavor (introduced Day 21 with Unique Paths), so no new-pattern primer. Constraints-first reminder: if the start or destination cell itself is an obstacle, the answer is 0 — read twice; obstacles block cells, the move set stays down/right only. Rule: 30 min struggle alone, hints only, solution never unprompted.
+
+🏷️ PATTERN
+DP 2D — Grid (introduced Day 21, not new). Top-down memoized grid DP: out-of-bounds/obstacle → 0, destination → 1, dp[i][j] = down + right.
+
+🧠 MY APPROACH
+Zero hints. First version: top-down memoized grid DP, verified locally on 11/11 tests — both LeetCode examples (2, 1) plus edges 1x1→1, 1x1 obstacle→0, destination obstacle→0, start obstacle→0, 2x2→2, 3x3→6, blocked-column→1, single-row obstacle→0, single-row→1. Coaching note from the log: the destination returns 1 without storing into dp (harmless — O(1) per arrival, no blowup — the same note as Day 19). The submitted LeetCode code already applies the destination-memo fix (destination returns dp[i][j] = 1, stored).
+
+⏱️ RESULT
+SOLVED — code pasted 17:06 IST, ~11 min from delivery; LeetCode Accepted 43/43, 0 ms (beats 100%), 12.00 MB (beats 27.12%), submitted 17:08 IST. Day 22 closed. Scorecard: Logic 5, Concepts 5, Speed fast (~11 min). English walkthrough pending.
+
+EXTRA — Self-driven: Unique Paths III (LC 980), submitted 18:02 IST — Accepted 39/39, 5 ms (beats 13.28%), 15.08 MB (beats 7.99%). 4-direction backtracking DFS with visited-mark (-1) + restore; destination (2) accepted only if no empty (0) cells remain (canAns scan). Memo was correctly left out (commented dp line) — memo is invalid here since the answer depends on the visited set, not just position. Polish: canAns scans the whole grid on every destination arrival — a remaining-empty counter (decrement on visit) removes that cost.
+
+📚 SYLLABUS
+0 topics marked done today (conservative rule). 2D grid DP (syllabus DSA topic 48: Unique paths, minimum path sum, dungeon game) is now 2 of 3 solved — Unique Paths (Day 21) and Unique Paths II (Day 22), both mediums — but the topic stays Not started until the hard problem lands, the traversal order is justified, and the approach is explained aloud in English. No explicit [syllabus: ...] markers in today's log entry.

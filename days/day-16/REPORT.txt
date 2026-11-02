@@ -1,0 +1,12 @@
+📊 SCORECARD (1–5 vs yesterday)
+Logic: 5 | Speed: fast (~11 min, no numeric score) | Concepts: 5 | English: pending
+Day 22 complete in the log — DSA only: Unique Paths II (LC 63) solved with zero hints in ~11 min, LeetCode Accepted 43/43, 0 ms (beats 100%), 12.00 MB, submitted 17:08 IST, with the destination-memo fix already applied in the submission; plus the self-driven Unique Paths III (LC 980), Accepted 39/39, submitted 18:02 IST. No formal 9:45 PM report section exists in the log for Day 22; the entry's completed DSA result ("Day 22 closed") is what is published, same as Days 20–21.
+
+📌 HIGHLIGHT
+Second grid-DP problem, solved clean and fast: Unique Paths II (LC 63, DP 2D Grid) via top-down memoized DP (out-of-bounds/obstacle → 0, destination → 1, dp[i][j] = down + right), verified 11/11 locally, then submitted with the destination-memo fix — Accepted 43/43 at 0 ms. Zero hints, ~11 min. Bonus the same evening, self-driven: LC 980 Unique Paths III, Accepted 39/39 — backtracking DFS with visited-mark + restore, memo correctly left out because the answer depends on the visited set, not just position. English walkthrough pending. Syllabus: 0 topics marked done today — 2D grid DP (DSA topic 48) is 2 of 3 solved but stays Not started until the hard problem lands and the approach is explained aloud in English.
+
+📈 TREND
+Grid DP is now a two-problem run, both zero-hint: Unique Paths (Day 21, self-converted to bottom-up) and Unique Paths II (Day 22, ~11 min, destination-memo fix applied in the submission). The extra the same evening — a self-driven backtracking problem (LC 980) with the memo-invalid insight stated correctly — is the day's independence signal, beyond the assigned problem.
+
+🎯 TOMORROW'S FOCUS (training Day 23 — Nov 3)
+Per the log's progression logic: grid DP has two mediums banked; the next step is the hard problem in the grid-DP family (per syllabus DSA topic 48: 2 mediums + 1 hard) or advance per the coach's call — the log does not yet record tomorrow's pick. Still owed: Unique Paths II + Unique Paths + Edit Distance English walkthroughs, two-row space-optimized Edit Distance follow-up, Backend 2 async re-quiz, DBMS #2 minimality + composite PK lock-in, OS #4, intro practice-back.
