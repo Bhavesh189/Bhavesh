@@ -1,0 +1,17 @@
+🎯 WHY THIS MATTERS
+No CS fundamentals block is recorded in the training log for today (Nov 5, 2026). Nothing is invented here — the log's Day 25 entry covers the DSA block only (plus the lapsed LC 375 game retry).
+
+📖 CORE CONCEPT
+No lesson recorded today.
+
+🔬 BEYOND YOUTUBE
+No lesson recorded today.
+
+💼 INTERVIEW LENS
+No lesson recorded today.
+
+❓ QUIZ
+No quiz recorded today.
+
+🙋 DOUBTS / QUEUED
+Still owed from earlier days (per the log): DBMS #2 minimality + composite PK lock-in (Day 15 quiz 2.5/4 — nearly done, to lock in a later quick re-check); OS #4 Process lifecycle and states (Not started). CS fundamentals track moved to Computer Networks IN-DEPTH from Oct 27 (his redirect) — the Oct 27 combined HTTP/OSI lesson's 4-question quiz (request parts, TCP/IP/HTTP layers, 401 vs 403, DNS + handshake) is still unanswered; no Networks lesson is recorded for today.

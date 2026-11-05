@@ -194,5 +194,19 @@
       "speed": null
     },
     "title": "Day 22 — Unique Paths II (grid DP, second problem) + Unique Paths III extra"
+  },
+  {
+    "date": "2026-11-05",
+    "dsa_pattern": "DP 1D",
+    "dsa_problem": "Min Cost Climbing Stairs (LC 746)",
+    "highlight": "Day 25 (light day, DSA only): planned interval-DP problem LC 1039 swapped out at his call (question not understood, off-brain day); Min Cost Climbing Stairs (LC 746) solved via rolling two-variable recurrence — Accepted 286/286, 0 ms (beats 100.00%), 17.40 MB, with both polish points (dead ans removed, dp array dropped) applied by him. LC 375 game retry lapsed; LC 1039 deferred to Day 26. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done (1D DP I still needs a third medium, decode ways, and an English explanation).",
+    "id": "day-17",
+    "scores": {
+      "concepts": 5,
+      "english": null,
+      "logic": 5,
+      "speed": null
+    },
+    "title": "Day 17 — Min Cost Climbing Stairs (light day, self-polished)"
   }
 ]

@@ -1,0 +1,8 @@
+🎤 ENGLISH PRACTICE
+No English walkthrough is recorded for Day 25's Min Cost Climbing Stairs (LC 746) — still pending, per the training log. Speed was not reported as a numeric score, so none is claimed here.
+
+💬 STAR STORY / BEHAVIORAL
+No behavioral block recorded today. Still pending from earlier days: practice-back of the "Tell me about yourself" intro (v3 ultra-simple delivered Oct 26, ~90 words, memory chain Problem → Tukde → Gehraai → Roz → Poora system).
+
+📈 NOTES
+English walkthrough debt keeps growing: the interview-style walkthrough for Min Cost Climbing Stairs (Day 25) joins the owed list, alongside Unique Paths II (Day 22), Unique Paths (Day 21), Edit Distance (Day 20), Minimum Falling Path Sum (Day 24), Longest Palindromic Subsequence (Day 23) and earlier days. The persistent gap from earlier scored walkthroughs (2.5/5 on Days 11 and 15) is framing + complexity close, not technical content — worth carrying into this one when it is delivered.
