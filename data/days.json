@@ -208,5 +208,19 @@
       "speed": null
     },
     "title": "Day 17 — Min Cost Climbing Stairs (light day, self-polished)"
+  },
+  {
+    "id": "day-18",
+    "date": "2026-11-06",
+    "title": "Day 18 — Longest Palindromic Substring (LC 5) + LC 516 clean repeat",
+    "dsa_problem": "Longest Palindromic Substring (LC 5)",
+    "dsa_pattern": "DP 2D Interval",
+    "scores": {
+      "logic": 5,
+      "speed": null,
+      "concepts": 5,
+      "english": null
+    },
+    "highlight": "Day 26 (DSA only): LC 516 warm-up repeat solved clean with zero hints (14/14 tests, next repeat Fri Nov 13); LC 1039 shelved at his call after a first attempt failed both worked examples (4 bugs named — memo key, base cases, loop bounds, wrong return); Longest Palindromic Substring (LC 5) solved via expand-around-center — Accepted 145/145, 18 ms. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done (Interval DP topic 53 needs both problems + English explanation; LC 1039 and LC 375 both shelved)."
   }
 ]
