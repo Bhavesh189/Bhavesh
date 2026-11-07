@@ -11,13 +11,13 @@
       "logic": 3,
       "speed": 4
     },
-    "title": "Day 1 — Product of Array Except Self + event loop + processes vs threads"
+    "title": "Day 1 \u2014 Product of Array Except Self + event loop + processes vs threads"
   },
   {
     "date": "2026-10-13",
     "dsa_pattern": "Two pointers",
     "dsa_problem": "3Sum (LC 15)",
-    "highlight": "Day 2 complete: 3Sum solved with one hint at 30 min (~44 min, 3-level dedup, O(n²)/O(1)), event-loop re-quiz 4/4 (term inversion fixed in 24h), closures 4/4, DBMS #1 4/4 from zero. AVL theory marked not-understood → re-teach queued. Concepts up, Speed down; avg 3.25.",
+    "highlight": "Day 2 complete: 3Sum solved with one hint at 30 min (~44 min, 3-level dedup, O(n\u00b2)/O(1)), event-loop re-quiz 4/4 (term inversion fixed in 24h), closures 4/4, DBMS #1 4/4 from zero. AVL theory marked not-understood \u2192 re-teach queued. Concepts up, Speed down; avg 3.25.",
     "id": "day-02",
     "scores": {
       "concepts": 4,
@@ -25,13 +25,13 @@
       "logic": 3,
       "speed": 3
     },
-    "title": "Day 2 — 3Sum + closures & scope + DBMS #1"
+    "title": "Day 2 \u2014 3Sum + closures & scope + DBMS #1"
   },
   {
     "date": "2026-10-14",
     "dsa_pattern": "Sliding window",
     "dsa_problem": "Longest Substring Without Repeating Characters (LC 3)",
-    "highlight": "Day 3 project day: LC 3 solved in ~10 min (seen before, logged honestly), DBMS #2 half-done and repeating tomorrow, 6–7 PM project work (Zulip → Sat). Avg 3.5, up from 3.25.",
+    "highlight": "Day 3 project day: LC 3 solved in ~10 min (seen before, logged honestly), DBMS #2 half-done and repeating tomorrow, 6\u20137 PM project work (Zulip \u2192 Sat). Avg 3.5, up from 3.25.",
     "id": "day-03",
     "scores": {
       "concepts": 3,
@@ -39,13 +39,13 @@
       "logic": 4,
       "speed": 4
     },
-    "title": "Day 3 — Longest Substring + DBMS keys (project day)"
+    "title": "Day 3 \u2014 Longest Substring + DBMS keys (project day)"
   },
   {
     "date": "2026-10-17",
     "dsa_pattern": "Recursion",
     "dsa_problem": "Pow(x, n) (LC 50)",
-    "highlight": "Day 6 (exam mode, DSA only): Pow(x, n) (LC 50) solved via recursive binary exponentiation in ~37 min — Accepted 309/309, 0ms (100%), 8.40MB (99.78%). Started late after the fresher party; English walkthrough deferred to tomorrow.",
+    "highlight": "Day 6 (exam mode, DSA only): Pow(x, n) (LC 50) solved via recursive binary exponentiation in ~37 min \u2014 Accepted 309/309, 0ms (100%), 8.40MB (99.78%). Started late after the fresher party; English walkthrough deferred to tomorrow.",
     "id": "day-06",
     "scores": {
       "concepts": 5,
@@ -53,13 +53,13 @@
       "logic": 5,
       "speed": 4
     },
-    "title": "Day 6 — Pow(x, n) (exam mode)"
+    "title": "Day 6 \u2014 Pow(x, n) (exam mode)"
   },
   {
     "date": "2026-10-18",
     "dsa_pattern": "Recursion",
     "dsa_problem": "K-th Symbol in Grammar (LC 779)",
-    "highlight": "Day 7 (exam mode, DSA only): K-th Symbol in Grammar (LC 779) — first attempt hit MLE building whole rows (the constraints trap flagged at delivery), then solved via parent-child recursion (parent at (k+1)/2; odd k → same, even k → flipped) in ~39 min. Accepted 55/55, 0ms (100%), 7.93MB. English walkthroughs for Day 6 + Day 7 owed.",
+    "highlight": "Day 7 (exam mode, DSA only): K-th Symbol in Grammar (LC 779) \u2014 first attempt hit MLE building whole rows (the constraints trap flagged at delivery), then solved via parent-child recursion (parent at (k+1)/2; odd k \u2192 same, even k \u2192 flipped) in ~39 min. Accepted 55/55, 0ms (100%), 7.93MB. English walkthroughs for Day 6 + Day 7 owed.",
     "id": "day-07",
     "scores": {
       "concepts": 5,
@@ -67,13 +67,13 @@
       "logic": 5,
       "speed": 4
     },
-    "title": "Day 7 — K-th Symbol in Grammar (exam mode)"
+    "title": "Day 7 \u2014 K-th Symbol in Grammar (exam mode)"
   },
   {
     "date": "2026-10-21",
     "dsa_pattern": "Backtracking",
     "dsa_problem": "Combination Sum II (LC 40)",
-    "highlight": "Day 10 (exam mode, DSA only): Combination Sum II (LC 40) solved in ~35 min — Accepted 176/176, 2 ms, 13.91 MB. Dedup guard was written but commented with the classic i > 0 bug; chat coaching fixed it to i > idx && nums[i] == nums[i-1] (same-level skip vs deeper-level valid); clean submit. Backtracking now 2 problems solid → Day 11 advances to TREES. English walkthrough owed.",
+    "highlight": "Day 10 (exam mode, DSA only): Combination Sum II (LC 40) solved in ~35 min \u2014 Accepted 176/176, 2 ms, 13.91 MB. Dedup guard was written but commented with the classic i > 0 bug; chat coaching fixed it to i > idx && nums[i] == nums[i-1] (same-level skip vs deeper-level valid); clean submit. Backtracking now 2 problems solid \u2192 Day 11 advances to TREES. English walkthrough owed.",
     "id": "day-08",
     "scores": {
       "concepts": 5,
@@ -81,13 +81,13 @@
       "logic": 5,
       "speed": 4
     },
-    "title": "Day 10 — Combination Sum II (exam mode)"
+    "title": "Day 10 \u2014 Combination Sum II (exam mode)"
   },
   {
     "date": "2026-10-22",
     "dsa_pattern": "Trees",
     "dsa_problem": "Diameter of Binary Tree (LC 543)",
-    "highlight": "Day 11 (exam mode, DSA only): Diameter of Binary Tree (LC 543) — trees pattern debut, solved correctly on first review (single-pass post-order, O(n)/O(h)). Logic 5, Concepts 5; English walkthrough delivered 2.5 (rambling, no complexity close). 0 syllabus topics marked done.",
+    "highlight": "Day 11 (exam mode, DSA only): Diameter of Binary Tree (LC 543) \u2014 trees pattern debut, solved correctly on first review (single-pass post-order, O(n)/O(h)). Logic 5, Concepts 5; English walkthrough delivered 2.5 (rambling, no complexity close). 0 syllabus topics marked done.",
     "id": "day-09",
     "scores": {
       "concepts": 5,
@@ -95,13 +95,13 @@
       "logic": 5,
       "speed": null
     },
-    "title": "Day 11 — Diameter of Binary Tree (exam mode)"
+    "title": "Day 11 \u2014 Diameter of Binary Tree (exam mode)"
   },
   {
     "date": "2026-10-23",
     "dsa_pattern": "Heaps",
     "dsa_problem": "Kth Largest Element in an Array (LC 215)",
-    "highlight": "Day 12 (exam mode, DSA only): Kth Largest Element in an Array (LC 215) — heaps pattern debut, solved with full max-heap O(n log n)/O(n), then derived the size-k min-heap O(n log k)/O(k) himself from a concrete walkthrough — Accepted 47/47, 42 ms. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done.",
+    "highlight": "Day 12 (exam mode, DSA only): Kth Largest Element in an Array (LC 215) \u2014 heaps pattern debut, solved with full max-heap O(n log n)/O(n), then derived the size-k min-heap O(n log k)/O(k) himself from a concrete walkthrough \u2014 Accepted 47/47, 42 ms. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done.",
     "id": "day-10",
     "scores": {
       "concepts": 5,
@@ -109,13 +109,13 @@
       "logic": 5,
       "speed": null
     },
-    "title": "Day 12 — Kth Largest Element in an Array (exam mode)"
+    "title": "Day 12 \u2014 Kth Largest Element in an Array (exam mode)"
   },
   {
     "date": "2026-10-24",
     "dsa_pattern": "Intervals",
     "dsa_problem": "Merge Intervals (LC 56)",
-    "highlight": "Day 13 (exam mode, DSA only): Merge Intervals (LC 56) — intervals pattern debut, clean sort + single-sweep merge in ~12 min — Accepted 172/172, 4 ms (beats 70.49%), 23.82 MB. No scores reported in the log today; English walkthrough pending. 0 syllabus topics marked done.",
+    "highlight": "Day 13 (exam mode, DSA only): Merge Intervals (LC 56) \u2014 intervals pattern debut, clean sort + single-sweep merge in ~12 min \u2014 Accepted 172/172, 4 ms (beats 70.49%), 23.82 MB. No scores reported in the log today; English walkthrough pending. 0 syllabus topics marked done.",
     "id": "day-11",
     "scores": {
       "concepts": null,
@@ -123,13 +123,13 @@
       "logic": null,
       "speed": null
     },
-    "title": "Day 13 — Merge Intervals (exam mode)"
+    "title": "Day 13 \u2014 Merge Intervals (exam mode)"
   },
   {
     "date": "2026-10-25",
     "dsa_pattern": "Intervals",
     "dsa_problem": "Insert Interval (LC 57)",
-    "highlight": "Day 14 (exam mode, DSA only): Insert Interval (LC 57) — first version O(n log n) via append + Day 13 merge, then the O(n) three-phase rewrite (before / overlapping / after, no sort) — Accepted 158/158, 0 ms (beats 100%), 21.68 MB. No scores reported in the log today; English walkthrough pending. 0 syllabus topics marked done.",
+    "highlight": "Day 14 (exam mode, DSA only): Insert Interval (LC 57) \u2014 first version O(n log n) via append + Day 13 merge, then the O(n) three-phase rewrite (before / overlapping / after, no sort) \u2014 Accepted 158/158, 0 ms (beats 100%), 21.68 MB. No scores reported in the log today; English walkthrough pending. 0 syllabus topics marked done.",
     "id": "day-12",
     "scores": {
       "concepts": null,
@@ -137,13 +137,13 @@
       "logic": null,
       "speed": null
     },
-    "title": "Day 14 — Insert Interval (exam mode)"
+    "title": "Day 14 \u2014 Insert Interval (exam mode)"
   },
   {
     "date": "2026-10-26",
     "dsa_pattern": "Graphs",
     "dsa_problem": "Number of Islands (LC 200)",
-    "highlight": "Day 15 (normal mode resumed): Number of Islands (LC 200, Graphs — new pattern) solved in ~8 min via recursive DFS, Logic 5 · Concepts 5; English walkthrough 2.5 (framing + complexity close still missing); full-stack Async patterns quiz 1/4 and DBMS #2 quiz 2.5/4, each re-taught same turn with re-checks queued; behavioral intro iterated to v2, practice-back pending. 0 syllabus topics marked done.",
+    "highlight": "Day 15 (normal mode resumed): Number of Islands (LC 200, Graphs \u2014 new pattern) solved in ~8 min via recursive DFS, Logic 5 \u00b7 Concepts 5; English walkthrough 2.5 (framing + complexity close still missing); full-stack Async patterns quiz 1/4 and DBMS #2 quiz 2.5/4, each re-taught same turn with re-checks queued; behavioral intro iterated to v2, practice-back pending. 0 syllabus topics marked done.",
     "id": "day-13",
     "scores": {
       "concepts": 5,
@@ -151,13 +151,13 @@
       "logic": 5,
       "speed": null
     },
-    "title": "Day 15 — Number of Islands + async patterns + DBMS keys + intro v2"
+    "title": "Day 15 \u2014 Number of Islands + async patterns + DBMS keys + intro v2"
   },
   {
     "date": "2026-10-31",
     "dsa_pattern": "DP 2D",
     "dsa_problem": "Edit Distance (LC 72)",
-    "highlight": "Day 20 (DSA only in the log): Edit Distance (LC 72, DP 2D) — FIRST Hard solved — bottom-up 2D DP, Accepted 1149/1149, 12 ms (beats 21.71%), 13.28 MB; heavy scaffolding honestly logged (greedy corrected via horse/ros, dp meaning took 3 attempts, 3 bug fixes). No scores reported in the log today; English walkthrough pending. 0 syllabus topics marked done (String DP I now 2 of 3).",
+    "highlight": "Day 20 (DSA only in the log): Edit Distance (LC 72, DP 2D) \u2014 FIRST Hard solved \u2014 bottom-up 2D DP, Accepted 1149/1149, 12 ms (beats 21.71%), 13.28 MB; heavy scaffolding honestly logged (greedy corrected via horse/ros, dp meaning took 3 attempts, 3 bug fixes). No scores reported in the log today; English walkthrough pending. 0 syllabus topics marked done (String DP I now 2 of 3).",
     "id": "day-14",
     "scores": {
       "concepts": null,
@@ -165,13 +165,13 @@
       "logic": null,
       "speed": null
     },
-    "title": "Day 20 — Edit Distance (first Hard)"
+    "title": "Day 20 \u2014 Edit Distance (first Hard)"
   },
   {
     "date": "2026-11-01",
     "dsa_pattern": "DP 2D Grid",
     "dsa_problem": "Unique Paths (LC 62)",
-    "highlight": "Day 21 (DSA only): Unique Paths (LC 62, DP 2D Grid — new sub-flavor) solved with primer only, zero hints — top-down memoized DP verified 11/11 locally, then self-converted to bottom-up for submission — Accepted 64/64, 1 ms; plus the Daily Question LC 453, Accepted 84/84, 0 ms (beats 100%), insight applied alone. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done (2D grid DP now 1 of 3).",
+    "highlight": "Day 21 (DSA only): Unique Paths (LC 62, DP 2D Grid \u2014 new sub-flavor) solved with primer only, zero hints \u2014 top-down memoized DP verified 11/11 locally, then self-converted to bottom-up for submission \u2014 Accepted 64/64, 1 ms; plus the Daily Question LC 453, Accepted 84/84, 0 ms (beats 100%), insight applied alone. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done (2D grid DP now 1 of 3).",
     "id": "day-15",
     "scores": {
       "concepts": 5,
@@ -179,13 +179,13 @@
       "logic": 5,
       "speed": null
     },
-    "title": "Day 21 — Unique Paths (grid DP debut) + Daily Question LC 453"
+    "title": "Day 21 \u2014 Unique Paths (grid DP debut) + Daily Question LC 453"
   },
   {
     "date": "2026-11-02",
     "dsa_pattern": "DP 2D Grid",
     "dsa_problem": "Unique Paths II (LC 63)",
-    "highlight": "Day 22 (DSA only): Unique Paths II (LC 63, DP 2D Grid — second problem) solved with zero hints in ~11 min — top-down memoized DP verified 11/11 locally, submitted with the destination-memo fix — Accepted 43/43, 0 ms (beats 100%), 12.00 MB; plus self-driven Unique Paths III (LC 980), Accepted 39/39, memo correctly left out since the answer depends on the visited set. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done (2D grid DP now 2 of 3).",
+    "highlight": "Day 22 (DSA only): Unique Paths II (LC 63, DP 2D Grid \u2014 second problem) solved with zero hints in ~11 min \u2014 top-down memoized DP verified 11/11 locally, submitted with the destination-memo fix \u2014 Accepted 43/43, 0 ms (beats 100%), 12.00 MB; plus self-driven Unique Paths III (LC 980), Accepted 39/39, memo correctly left out since the answer depends on the visited set. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done (2D grid DP now 2 of 3).",
     "id": "day-16",
     "scores": {
       "concepts": 5,
@@ -193,13 +193,13 @@
       "logic": 5,
       "speed": null
     },
-    "title": "Day 22 — Unique Paths II (grid DP, second problem) + Unique Paths III extra"
+    "title": "Day 22 \u2014 Unique Paths II (grid DP, second problem) + Unique Paths III extra"
   },
   {
     "date": "2026-11-05",
     "dsa_pattern": "DP 1D",
     "dsa_problem": "Min Cost Climbing Stairs (LC 746)",
-    "highlight": "Day 25 (light day, DSA only): planned interval-DP problem LC 1039 swapped out at his call (question not understood, off-brain day); Min Cost Climbing Stairs (LC 746) solved via rolling two-variable recurrence — Accepted 286/286, 0 ms (beats 100.00%), 17.40 MB, with both polish points (dead ans removed, dp array dropped) applied by him. LC 375 game retry lapsed; LC 1039 deferred to Day 26. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done (1D DP I still needs a third medium, decode ways, and an English explanation).",
+    "highlight": "Day 25 (light day, DSA only): planned interval-DP problem LC 1039 swapped out at his call (question not understood, off-brain day); Min Cost Climbing Stairs (LC 746) solved via rolling two-variable recurrence \u2014 Accepted 286/286, 0 ms (beats 100.00%), 17.40 MB, with both polish points (dead ans removed, dp array dropped) applied by him. LC 375 game retry lapsed; LC 1039 deferred to Day 26. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done (1D DP I still needs a third medium, decode ways, and an English explanation).",
     "id": "day-17",
     "scores": {
       "concepts": 5,
@@ -207,12 +207,12 @@
       "logic": 5,
       "speed": null
     },
-    "title": "Day 17 — Min Cost Climbing Stairs (light day, self-polished)"
+    "title": "Day 17 \u2014 Min Cost Climbing Stairs (light day, self-polished)"
   },
   {
     "id": "day-18",
     "date": "2026-11-06",
-    "title": "Day 18 — Longest Palindromic Substring (LC 5) + LC 516 clean repeat",
+    "title": "Day 18 \u2014 Longest Palindromic Substring (LC 5) + LC 516 clean repeat",
     "dsa_problem": "Longest Palindromic Substring (LC 5)",
     "dsa_pattern": "DP 2D Interval",
     "scores": {
@@ -221,6 +221,20 @@
       "concepts": 5,
       "english": null
     },
-    "highlight": "Day 26 (DSA only): LC 516 warm-up repeat solved clean with zero hints (14/14 tests, next repeat Fri Nov 13); LC 1039 shelved at his call after a first attempt failed both worked examples (4 bugs named — memo key, base cases, loop bounds, wrong return); Longest Palindromic Substring (LC 5) solved via expand-around-center — Accepted 145/145, 18 ms. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done (Interval DP topic 53 needs both problems + English explanation; LC 1039 and LC 375 both shelved)."
+    "highlight": "Day 26 (DSA only): LC 516 warm-up repeat solved clean with zero hints (14/14 tests, next repeat Fri Nov 13); LC 1039 shelved at his call after a first attempt failed both worked examples (4 bugs named \u2014 memo key, base cases, loop bounds, wrong return); Longest Palindromic Substring (LC 5) solved via expand-around-center \u2014 Accepted 145/145, 18 ms. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done (Interval DP topic 53 needs both problems + English explanation; LC 1039 and LC 375 both shelved)."
+  },
+  {
+    "id": "day-19",
+    "date": "2026-11-07",
+    "title": "Day 19 \u2014 Palindromic Substrings (LC 647) + interval DP consolidation",
+    "dsa_problem": "Palindromic Substrings (LC 647)",
+    "dsa_pattern": "DP 2D Interval",
+    "scores": {
+      "logic": 5,
+      "speed": null,
+      "concepts": 5,
+      "english": null
+    },
+    "highlight": "Day 27 (DSA only): Palindromic Substrings (LC 647) solved after four honest attempts \u2014 the recurring gap was filling the whole DP table, not checking one cell (same family as the LC 931 sentinel trap); the landed fix was memoised solve with the i>=j base case and a call for every (i, j) pair \u2014 Accepted 132/132, 55 ms. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done (Interval DP topic 53 needs both problems solved plus loop-order justification and an English explanation; LC 1039 and LC 375 both shelved)."
   }
 ]
