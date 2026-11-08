@@ -1,0 +1,17 @@
+🎯 WHY THIS MATTERS
+No full-stack block is recorded in the training log for today (Nov 8, 2026). Nothing is invented here — the log's Day 28 entry covers the DSA block only (Palindrome Partitioning, LC 131, plus the Daily Question LC 1267) and the postponed Sunday mock.
+
+📖 CORE CONCEPT
+No lesson recorded today.
+
+🔬 BEYOND YOUTUBE
+No lesson recorded today.
+
+💼 INTERVIEW LENS
+No lesson recorded today.
+
+❓ QUIZ
+No quiz recorded today.
+
+🙋 DOUBTS / QUEUED
+Still owed from earlier days (per the log): Backend topic 2 (Async patterns) spaced re-quiz — queued since Day 15's 1/4 quiz; the re-teach (fail-fast + no-cancel, forEach ignoring returned promises, promisify wrapper) was delivered Day 15. Syllabus Backend topic 2 is NOT marked Done until that re-quiz passes.

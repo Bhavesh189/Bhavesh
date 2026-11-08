@@ -1,0 +1,17 @@
+🧩 PROBLEM
+Palindrome Partitioning (LC 131) — Medium. Day 28 DSA problem, delivered 10:00 AM early at his request, ahead of the 4:30 PM Sunday slot. Interval DP consolidation: Day 27 LC 647 closed with 1 hint + 3 code reviews across 4 attempts — interval DP now has three solid closures (LC 516, LC 5, LC 647), so consolidate with the partition variant: same palindrome territory, now try every cut. LC 375 + LC 1039 stay shelved, revisit only on his call. LC 647 repeat is Tue Nov 10 warm-up, not today. Lens reminder only (same palindrome check as LC 5/647, now CUT the string at every point — a partition is valid only if every piece is a palindrome; the state is the start index, and the choice is where the first piece ends). Rule: 30 min struggle alone, hints only, solution never unprompted. Constraints-first reminder: s length 1–16, so exponential backtracking fits, but check every cut — return ALL partitions, not just one; single characters are palindromes too.
+
+🏷️ PATTERN
+DP 2D — Interval / partition (introduced via LC 516/647, not new). The palindrome check from LC 5/647, now applied at every cut point.
+
+🧠 MY APPROACH
+Code pasted 10:35 IST, reviewed by local run — the run reproduced the WA first ("aab" → [a,b] [a,b] [aa]; "a" → [] — the smoking gun). Bugs named: (1) substr(i, j) takes a LENGTH, not an end index — piece s[i..j] needs substr(i, j-i+1); (2) else branch recursed with j+1 without adding anything — characters silently dropped. isPalindrome verified correct. Fix by him, resubmission pending.
+
+⏱️ RESULT
+SOLVED — LeetCode Accepted 32/32, 40 ms (beats 73.30%), 53.50 MB (beats 71.19%), submitted 10:36 IST. Backtracking + palindrome check, every cut tried. Day 28 closed. Scorecard: Logic 5, Concepts 5. Hints: 0 + 1 code review. Added to repeat list (revisit Wed 2026-11-11 warm-up). Polish for later: isPalindrome re-checks every substring from scratch + substr copies — a precomputed palindrome DP table would cut repeated work; `if(temp.size() != 0)` in the base case is dead code now (harmless).
+
+➕ EXTRA — DAILY QUESTION
+Count Servers that Communicate (LC 1267) — Medium. Self-driven extra, zero hints. LeetCode Accepted 55/55, 7 ms (beats 25.62%), 26.49 MB (beats 79.18%), submitted 10:56 IST. Clean optimal approach: row/col counts + total servers, minus servers alone in both their row and column. Polish for later: unordered_map counts work but cost runtime percentile — plain vector<int> row/col counts would be faster.
+
+📚 SYLLABUS
+0 topics marked done today (conservative rule). No explicit [syllabus: ...] markers in today's log entry. Interval DP (topic 53) stays Not started: its "Done when" needs both hards solved (burst balloons, minimum cost to cut a stick) + loop-order justification + the approach explained aloud in English + O(n³) derived honestly — LC 131 is a Medium partition problem, not one of the two hards, no loop-order justification was given, and no English walkthrough was delivered today. DP on palindromes (topic 56) also stays Not started: needs all 3 solved (2 mediums + 1 hard) + gap-strategy vs expand-around-center trade-off explained + explained aloud in English — LC 5, LC 647 and LC 131 are three Medium solves, but no hard is solved, and the trade-off was named in a primer, not explained aloud by him.
