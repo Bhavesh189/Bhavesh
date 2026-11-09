@@ -71,6 +71,7 @@ No build step. No backend. Just push to the repo — GitHub Pages serves it.
 | day-18 | 2026-11-06 | DP 2D Interval | 5.0 (speed + English pending) |
 | day-19 | 2026-11-07 | DP 2D Interval | 5.0 (speed + English pending) |
 | day-20 | 2026-11-08 | DP 2D Interval | 5.0 (speed + English pending) |
+| day-21 | 2026-11-09 | DP 2D Interval | 5.0 (speed + English pending) |
 
 *Baseline (Day 0, Oct 11, 2026): 455 LeetCode solved (176E/247M/32H) · CGPA 9.20/10 ·
 Go backend @ Obfinity · Web Dev Intern @ Squarecell · CS fundamentals from zero.*
