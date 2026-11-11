@@ -264,5 +264,19 @@
       "english": null
     },
     "highlight": "Day 29 (DSA only): Palindrome Partitioning II (LC 132) \u2014 the direct sequel to LC 131, same palindrome table plus a cuts[] array over suffixes filled right-to-left; the cuts idea needed three explanations (state, worked 'aab' example, recipe on his table) and both memo bugs from Review #1 were fixed by him in one pass \u2014 Accepted 37/37, 158 ms (beats 42.54%), 62.58 MB; 11/11 local tests pass, O(n\u00b2) holds at n=2000. Logic 5, Concepts 5; English walkthrough pending. 0 syllabus topics marked done (Interval DP topic 53 needs both hards + loop-order justification + English explanation; DP on palindromes topic 56 still needs a hard solved)."
+  },
+  {
+    "id": "day-22",
+    "date": "2026-11-11",
+    "title": "Day 31 \u2014 Best Time to Buy and Sell Stock with Fee (LC 714) + LC 121 + LC 131 repeat",
+    "dsa_problem": "Best Time to Buy and Sell Stock with Transaction Fee (LC 714)",
+    "dsa_pattern": "DP \u2014 Decision Making (Pattern 5)",
+    "scores": {
+      "logic": 5,
+      "speed": null,
+      "concepts": 5,
+      "english": null
+    },
+    "highlight": "Day 31 (DSA only, sprint Day 2): warm-up LC 131 repeat clean (zero hints), swap LC 121 clean 5/5 (zero hints), extra LC 714 Accepted 45/45, 0 ms (beats 100%), 63.40 MB \u2014 but with heavy hints: the fee logic clicked only through the merging insight on his own example [1,3,7,5,10] fee 3 (two trades = 5, one merged trade = 6). His words: \"ek case solve kia baki loop ne kr dia\". Pattern 3 (Merging Intervals) did not click \u2014 LC 96 and Matrix Chain both unattempted; restarts Nov 12 from scratch. Logic 5, Concepts 5; English recap pending. 0 syllabus topics marked done (State-machine DP topic 55 needs all 4 solved + template applied + English explanation; DP on palindromes topic 56 still needs a hard solved)."
   }
 ]
